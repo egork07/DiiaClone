@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Documents</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Documents</h1>
+
+<a th:href="@{/}">
+    Home
+</a>
+
+<br><br>
+
+<a th:href="@{/documents/new}">
+    Create Document
+</a>
+
+<br><br>
+
+<form th:action="@{/documents/search}"
+      method="get">
+
+    <input type="text"
+           name="type"
+           placeholder="Search by type">
+
+    <button type="submit">
+        Search
+    </button>
+
+</form>
+
+<br>
+
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Number</th>
+        <th>Owner</th>
+        <th>Actions</th>
+    </tr>
+
+    <tr th:each="document : ${documents}">
+
+        <td th:text="${document.id}"></td>
+
+        <td th:text="${document.documentType}"></td>
+
+        <td th:text="${document.documentNumber}"></td>
+
+        <td th:text="${document.user.fullName}"></td>
+
+        <td>
+
+            <a th:href="@{/documents/delete/{id}(id=${document.id})}">
+                Delete
+            </a>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>

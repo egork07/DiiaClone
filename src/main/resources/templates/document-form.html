@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Document</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Create Document</h1>
+
+<form th:action="@{/documents}"
+      th:object="${documentCreateDto}"
+      method="post">
+
+    <div>
+
+        <label>Document Type:</label>
+
+        <input type="text"
+               th:field="*{documentType}">
+
+        <div style="color:red"
+             th:if="${#fields.hasErrors('documentType')}"
+             th:errors="*{documentType}">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>Document Number:</label>
+
+        <input type="text"
+               th:field="*{documentNumber}">
+
+        <div style="color:red"
+             th:if="${#fields.hasErrors('documentNumber')}"
+             th:errors="*{documentNumber}">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <label>User:</label>
+
+        <select th:field="*{userId}">
+
+            <option value="">
+                Select user
+            </option>
+
+            <option
+                    th:each="user : ${users}"
+                    th:value="${user.id}"
+                    th:text="${user.fullName}">
+            </option>
+
+        </select>
+
+        <div style="color:red"
+             th:if="${#fields.hasErrors('userId')}"
+             th:errors="*{userId}">
+        </div>
+
+    </div>
+
+    <br>
+
+    <button type="submit">
+        Save
+    </button>
+
+</form>
+
+<br>
+
+<a th:href="@{/documents}">
+    Back
+</a>
+
+</body>
+</html>
