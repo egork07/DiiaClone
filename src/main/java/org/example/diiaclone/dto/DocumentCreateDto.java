@@ -17,30 +17,12 @@ public class DocumentCreateDto {
     @NotNull(message = "User must be selected")
     private Long userId;
 
-    public DocumentCreateDto() {
-    }
+    public DocumentCreateDto() {}
 
-    public String getDocumentType() {
-        return documentType;
-    }
-
-    public String getDocumentNumber() {
-        return documentNumber;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setDocumentType(String documentType) {
-        this.documentType = documentType;
-    }
-
-    public void setDocumentNumber(String documentNumber) {
-        this.documentNumber = documentNumber;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
+    public String getDocumentType() { return documentType; }
+    public String getDocumentNumber() { return documentNumber; }
+    public Long getUserId() { return userId; }
+    public void setDocumentType(String documentType) { this.documentType = documentType; }
+    public void setDocumentNumber(String documentNumber) { this.documentNumber = documentNumber; }
+    public void setUserId(Long userId) { this.userId = userId; }
 }

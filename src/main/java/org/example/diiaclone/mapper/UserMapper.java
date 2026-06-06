@@ -7,17 +7,13 @@ import org.example.diiaclone.entity.User;
 public class UserMapper {
 
     public static User toEntity(UserCreateDto dto) {
-
         User user = new User();
-
         user.setFullName(dto.getFullName());
         user.setEmail(dto.getEmail());
-
         return user;
     }
 
     public static UserResponseDto toDto(User user) {
-
         return new UserResponseDto(
                 user.getId(),
                 user.getFullName(),

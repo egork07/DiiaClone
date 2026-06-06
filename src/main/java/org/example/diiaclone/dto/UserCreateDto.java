@@ -15,22 +15,10 @@ public class UserCreateDto {
     @Email(message = "Invalid email format")
     private String email;
 
-    public UserCreateDto() {
-    }
+    public UserCreateDto() {}
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    public String getFullName() { return fullName; }
+    public String getEmail() { return email; }
+    public void setFullName(String fullName) { this.fullName = fullName; }
+    public void setEmail(String email) { this.email = email; }
 }

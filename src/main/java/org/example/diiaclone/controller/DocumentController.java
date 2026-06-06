@@ -2,103 +2,72 @@ package org.example.diiaclone.controller;
 
 import jakarta.validation.Valid;
 import org.example.diiaclone.dto.DocumentCreateDto;
+import org.example.diiaclone.dto.DocumentResponseDto;
 import org.example.diiaclone.entity.Document;
 import org.example.diiaclone.entity.User;
 import org.example.diiaclone.service.DocumentService;
 import org.example.diiaclone.service.UserService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
-@RequestMapping("/documents")
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/documents")
 public class DocumentController {
 
     private final DocumentService documentService;
-    private final UserService userService;
 
-    public DocumentController(
-            DocumentService documentService,
-            UserService userService) {
-
+    public DocumentController(DocumentService documentService) {
         this.documentService = documentService;
-        this.userService = userService;
     }
 
     @GetMapping
-    public String getAllDocuments(Model model) {
-
-        model.addAttribute(
-                "documents",
-                documentService.getAllDocuments());
-
-        return "documents";
+    public ResponseEntity<List<DocumentResponseDto>> getAllDocuments() {
+        return ResponseEntity.ok(documentService.getAllDocuments());
     }
 
-    @GetMapping("/new")
-    public String showCreateForm(Model model) {
-
-        model.addAttribute(
-                "documentCreateDto",
-                new DocumentCreateDto());
-
-        model.addAttribute(
-                "users",
-                userService.getAllUsers());
-
-        return "document-form";
-    }
-
-    @PostMapping
-    public String createDocument(
-            @Valid @ModelAttribute DocumentCreateDto dto,
-            BindingResult bindingResult,
-            Model model) {
-
-        if (bindingResult.hasErrors()) {
-
-            model.addAttribute(
-                    "users",
-                    userService.getAllUsers());
-
-            return "document-form";
-        }
-
-        User user = userService
-                .getUserById(dto.getUserId())
-                .orElseThrow();
-
-        Document document = new Document();
-
-        document.setDocumentType(dto.getDocumentType());
-        document.setDocumentNumber(dto.getDocumentNumber());
-        document.setUser(user);
-
-        documentService.saveDocument(document);
-
-        return "redirect:/documents";
-    }
-
-    // Удаление документа
-    @GetMapping("/delete/{id}")
-    public String deleteDocument(@PathVariable Long id) {
-
-        documentService.deleteDocument(id);
-
-        return "redirect:/documents";
+    @GetMapping("/{id}")
+    public ResponseEntity<DocumentResponseDto> getDocumentById(@PathVariable Long id) {
+        return documentService.getDocumentById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/search")
-    public String searchDocuments(
-            @RequestParam String type,
-            Model model) {
+    public ResponseEntity<List<DocumentResponseDto>> searchByType(
+            @RequestParam String type) {
 
-        model.addAttribute(
-                "documents",
-                documentService.searchByType(type));
-
-        return "documents";
+        return ResponseEntity.ok(documentService.searchByType(type));
     }
 
+    @PostMapping
+    public ResponseEntity<DocumentResponseDto> createDocument(
+            @Valid @RequestBody DocumentCreateDto dto) {
+
+        DocumentResponseDto created = documentService.createDocument(dto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<DocumentResponseDto> updateDocument(
+            @PathVariable Long id,
+            @Valid @RequestBody DocumentCreateDto dto) {
+
+        return documentService.updateDocument(id, dto)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteDocument(@PathVariable Long id) {
+        if (documentService.deleteDocument(id)) {
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.notFound().build();
+    }
 }

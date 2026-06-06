@@ -6,7 +6,6 @@ import org.example.diiaclone.entity.Document;
 public class DocumentMapper {
 
     public static DocumentResponseDto toDto(Document document) {
-
         return new DocumentResponseDto(
                 document.getId(),
                 document.getDocumentType(),
