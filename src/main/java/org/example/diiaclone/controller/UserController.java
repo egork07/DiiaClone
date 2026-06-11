@@ -4,6 +4,7 @@ import jakarta.validation.Valid;
 import org.example.diiaclone.dto.UserCreateDto;
 import org.example.diiaclone.dto.UserResponseDto;
 import org.example.diiaclone.entity.User;
+import org.example.diiaclone.exeption.EmailAlreadyExistsException;
 import org.example.diiaclone.mapper.UserMapper;
 import org.example.diiaclone.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -32,7 +33,7 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<UserResponseDto> getUserById(@PathVariable Long id) {
-        // UserNotFoundException -> 404 через GlobalExceptionHandler
+
         return ResponseEntity.ok(userService.getUserById(id));
     }
 
