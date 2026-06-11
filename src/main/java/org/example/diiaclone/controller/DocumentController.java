@@ -33,9 +33,8 @@ public class DocumentController {
 
     @GetMapping("/{id}")
     public ResponseEntity<DocumentResponseDto> getDocumentById(@PathVariable Long id) {
-        return documentService.getDocumentById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        // DocumentNotFoundException -> 404 через GlobalExceptionHandler
+        return ResponseEntity.ok(documentService.getDocumentById(id));
     }
 
     @GetMapping("/search")
@@ -49,8 +48,9 @@ public class DocumentController {
     public ResponseEntity<DocumentResponseDto> createDocument(
             @Valid @RequestBody DocumentCreateDto dto) {
 
-        DocumentResponseDto created = documentService.createDocument(dto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(documentService.createDocument(dto));
     }
 
     @PutMapping("/{id}")
@@ -58,16 +58,12 @@ public class DocumentController {
             @PathVariable Long id,
             @Valid @RequestBody DocumentCreateDto dto) {
 
-        return documentService.updateDocument(id, dto)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        return ResponseEntity.ok(documentService.updateDocument(id, dto));
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteDocument(@PathVariable Long id) {
-        if (documentService.deleteDocument(id)) {
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.notFound().build();
+        documentService.deleteDocument(id);
+        return ResponseEntity.noContent().build();
     }
 }
