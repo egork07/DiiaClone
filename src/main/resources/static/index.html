@@ -1,690 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-<meta charset="UTF-8">
-<title>Diia Clone</title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --bg: #0d0d0d;
-    --surface: #161616;
-    --border: #2a2a2a;
-    --border-active: #444;
-    --text: #e8e8e8;
-    --muted: #666;
-    --accent: #00d4aa;
-    --accent-dim: #00d4aa22;
-    --danger: #ff4d4d;
-    --danger-dim: #ff4d4d18;
-    --warning: #ffb547;
-    --mono: 'IBM Plex Mono', monospace;
-    --sans: 'IBM Plex Sans', sans-serif;
-  }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: 14px;
-    line-height: 1.6;
-    min-height: 100vh;
-  }
-
-  header {
-    border-bottom: 1px solid var(--border);
-    padding: 1.25rem 2rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    position: sticky;
-    top: 0;
-    background: var(--bg);
-    z-index: 100;
-  }
-
-  .logo {
-    font-family: var(--mono);
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--accent);
-    letter-spacing: -0.5px;
-  }
-
-  .logo span { color: var(--muted); font-weight: 400; }
-
-  nav { display: flex; gap: 0; margin-left: auto; }
-
-  .tab {
-    font-family: var(--mono);
-    font-size: 12px;
-    padding: 6px 16px;
-    border: 1px solid var(--border);
-    background: transparent;
-    color: var(--muted);
-    cursor: pointer;
-    transition: all 0.15s;
-    letter-spacing: 0.5px;
-  }
-
-  .tab:first-child { border-radius: 4px 0 0 4px; }
-  .tab:last-child { border-radius: 0 4px 4px 0; border-left: none; }
-
-  .tab.active {
-    background: var(--accent-dim);
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  .tab:hover:not(.active) {
-    border-color: var(--border-active);
-    color: var(--text);
-  }
-
-  main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
-
-  .page { display: none; }
-  .page.active { display: block; }
-
-  .grid { display: grid; grid-template-columns: 340px 1fr; gap: 1.5rem; align-items: start; }
-
-  .panel {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    overflow: hidden;
-  }
-
-  .panel-header {
-    padding: 10px 16px;
-    border-bottom: 1px solid var(--border);
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .count-badge {
-    background: var(--border);
-    color: var(--muted);
-    font-family: var(--mono);
-    font-size: 10px;
-    padding: 1px 6px;
-    border-radius: 10px;
-  }
-
-  .panel-body { padding: 16px; }
-
-  label {
-    display: block;
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--muted);
-    margin-bottom: 5px;
-    letter-spacing: 0.5px;
-  }
-
-  input, select {
-    width: 100%;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    color: var(--text);
-    font-family: var(--mono);
-    font-size: 13px;
-    padding: 8px 10px;
-    margin-bottom: 12px;
-    transition: border-color 0.15s;
-    outline: none;
-  }
-
-  input:focus, select:focus { border-color: var(--accent); }
-
-  input.error { border-color: var(--danger); }
-
-  .err-msg {
-    font-family: var(--mono);
-    font-size: 11px;
-    color: var(--danger);
-    margin-top: -10px;
-    margin-bottom: 10px;
-    display: none;
-  }
-
-  .err-msg.show { display: block; }
-
-  select option { background: #1a1a1a; }
-
-  .btn {
-    font-family: var(--mono);
-    font-size: 12px;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.15s;
-    border: 1px solid;
-    letter-spacing: 0.3px;
-  }
-
-  .btn-primary {
-    background: var(--accent-dim);
-    border-color: var(--accent);
-    color: var(--accent);
-    width: 100%;
-  }
-
-  .btn-primary:hover { background: #00d4aa33; }
-
-  .btn-danger {
-    background: transparent;
-    border-color: var(--danger);
-    color: var(--danger);
-    font-size: 11px;
-    padding: 4px 10px;
-  }
-
-  .btn-danger:hover { background: var(--danger-dim); }
-
-  .btn-ghost {
-    background: transparent;
-    border-color: var(--border);
-    color: var(--muted);
-    font-size: 11px;
-    padding: 4px 10px;
-  }
-
-  .btn-ghost:hover { border-color: var(--border-active); color: var(--text); }
-
-  .search-row {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-    align-items: center;
-  }
-
-  .search-row input { margin-bottom: 0; flex: 1; }
-  .search-row .btn { white-space: nowrap; }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: var(--mono);
-    font-size: 12px;
-  }
-
-  th {
-    text-align: left;
-    padding: 8px 10px;
-    color: var(--muted);
-    border-bottom: 1px solid var(--border);
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    font-size: 11px;
-  }
-
-  td {
-    padding: 10px 10px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text);
-    vertical-align: middle;
-  }
-
-  tr:last-child td { border-bottom: none; }
-  tr:hover td { background: #ffffff06; }
-
-  .id-cell {
-    color: var(--muted);
-    font-size: 11px;
-  }
-
-  .type-tag {
-    background: var(--accent-dim);
-    color: var(--accent);
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 3px;
-    font-family: var(--mono);
-  }
-
-  .actions { display: flex; gap: 6px; }
-
-  .empty {
-    padding: 2rem;
-    text-align: center;
-    color: var(--muted);
-    font-family: var(--mono);
-    font-size: 12px;
-  }
-
-  .flash {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    padding: 10px 16px;
-    border-radius: 5px;
-    font-family: var(--mono);
-    font-size: 12px;
-    z-index: 999;
-    opacity: 0;
-    transform: translateY(8px);
-    transition: all 0.2s;
-    pointer-events: none;
-  }
-
-  .flash.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .flash.success {
-    background: #00d4aa22;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-  }
-
-  .flash.error {
-    background: var(--danger-dim);
-    border: 1px solid var(--danger);
-    color: var(--danger);
-  }
-
-  .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: #000000cc;
-    z-index: 200;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .modal-overlay.open { display: flex; }
-
-  .modal {
-    background: var(--surface);
-    border: 1px solid var(--border-active);
-    border-radius: 8px;
-    width: 400px;
-    overflow: hidden;
-  }
-
-  .modal-header {
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border);
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--muted);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  .modal-body { padding: 16px; }
-  .modal-foot { display: flex; gap: 8px; padding: 0 16px 16px; justify-content: flex-end; }
-
-  .divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 14px 0;
-  }
-</style>
-</head>
-<body>
-
-<header>
-  <div class="logo">Diia<span>Clone</span> <span style="color:#2a2a2a">|</span> </div>
-  <nav>
-    <button class="tab active" onclick="showPage('users')">USERS</button>
-    <button class="tab" onclick="showPage('documents')">DOCUMENTS</button>
-  </nav>
-</header>
-
-<main>
-
-  <!-- USERS PAGE -->
-  <div id="page-users" class="page active">
-    <div class="grid">
-
-      <div class="panel">
-        <div class="panel-header">User Registration</div>
-        <div class="panel-body">
-          <label>Full name</label>
-          <input id="u-name" type="text" placeholder="Yehor Kyrylin">
-          <div class="err-msg" id="err-u-name"></div>
-
-          <label>Email</label>
-          <input id="u-email" type="email" placeholder="yehor@example.com">
-          <div class="err-msg" id="err-u-email"></div>
-
-          <button class="btn btn-primary" onclick="createUser()">→ Register</button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diia Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        Diia<span>Clone</span> <span style="color: #2a2a2a">|</span>
       </div>
+      <nav>
+        <button class="tab active" onclick="showPage('users')">Users</button>
+        <button class="tab" onclick="showPage('documents')">Documents</button>
+      </nav>
+    </header>
 
-      <div class="panel">
-        <div class="panel-header">
-          Users
-          <span class="count-badge" id="users-count">0</span>
-        </div>
-        <div id="users-table-wrap">
-          <div class="empty">Loading...</div>
-        </div>
-      </div>
+    <main>
+      <!-- USERS PAGE -->
+      <div id="page-users" class="page active">
+        <div class="grid">
+          <div class="panel">
+            <div class="panel-header">User Registration</div>
+            <div class="panel-body">
+              <label>Full name</label>
+              <input id="u-name" type="text" placeholder="Yehor Kyrylin" />
+              <div class="err-msg" id="err-u-name"></div>
 
-    </div>
-  </div>
+              <label>Email</label>
+              <input id="u-email" type="email" placeholder="yehor@example.com" />
+              <div class="err-msg" id="err-u-email"></div>
 
-  <!-- DOCUMENTS PAGE -->
-  <div id="page-documents" class="page">
-    <div class="grid">
+              <button class="btn btn-primary" onclick="createUser()">
+                → Register
+              </button>
+            </div>
+          </div>
 
-      <div class="panel">
-        <div class="panel-header">Documents registration</div>
-        <div class="panel-body">
-          <label>Document type</label>
-          <input id="d-type" type="text" placeholder="Passport">
-          <div class="err-msg" id="err-d-type"></div>
-
-          <label>Document number</label>
-          <input id="d-number" type="text" placeholder="AA123456">
-          <div class="err-msg" id="err-d-number"></div>
-
-          <label>User ID</label>
-          <select id="d-user">
-            <option value="">— select user —</option>
-          </select>
-          <div class="err-msg" id="err-d-user"></div>
-
-          <button class="btn btn-primary" onclick="createDocument()">→ Register </button>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header">
-          Your documents
-          <span class="count-badge" id="docs-count">0</span>
-        </div>
-        <div class="panel-body" style="padding-bottom:0; padding-top:12px;">
-          <div class="search-row">
-            <input id="search-type" type="text" placeholder="Search by type...">
-            <button class="btn btn-ghost" onclick="searchDocuments()">SEARCH</button>
-            <button class="btn btn-ghost" onclick="loadDocuments()">ALL</button>
+          <div class="panel">
+            <div class="panel-header">
+              Users
+              <span class="count-badge" id="users-count">0</span>
+            </div>
+            <div id="users-table-wrap">
+              <div class="empty">Loading...</div>
+            </div>
           </div>
         </div>
-        <div id="docs-table-wrap">
-          <div class="empty">Loading...</div>
-        </div>
       </div>
 
+      <!-- DOCUMENTS PAGE -->
+      <div id="page-documents" class="page">
+        <div class="grid">
+          <div class="panel">
+            <div class="panel-header">Documents registration</div>
+            <div class="panel-body">
+              <label>Document type</label>
+              <input id="d-type" type="text" placeholder="Passport" />
+              <div class="err-msg" id="err-d-type"></div>
+
+              <label>Document number</label>
+              <input id="d-number" type="text" placeholder="AA123456" />
+              <div class="err-msg" id="err-d-number"></div>
+
+              <label>User ID</label>
+              <select id="d-user">
+                <option value="">— select user —</option>
+              </select>
+              <div class="err-msg" id="err-d-user"></div>
+
+              <button class="btn btn-primary" onclick="createDocument()">
+                → Register
+              </button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              Your documents
+              <span class="count-badge" id="docs-count">0</span>
+            </div>
+            <div class="panel-body" style="padding-bottom: 0; padding-top: 12px">
+              <div class="search-row">
+                <input id="search-type" type="text" placeholder="Search by type..." />
+                <button class="btn btn-ghost" onclick="searchDocuments()">Search</button>
+                <button class="btn btn-ghost" onclick="loadDocuments()">All</button>
+              </div>
+            </div>
+            <div id="docs-table-wrap">
+              <div class="empty">Loading...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Edit User Modal -->
+    <div class="modal-overlay" id="modal-user">
+      <div class="modal">
+        <div class="modal-header">PUT /api/users/{id}</div>
+        <div class="modal-body">
+          <input type="hidden" id="edit-u-id" />
+          <label>Full name</label>
+          <input id="edit-u-name" type="text" />
+          <label>Email</label>
+          <input id="edit-u-email" type="email" />
+        </div>
+        <div class="modal-foot">
+          <button class="btn btn-ghost" onclick="closeModal('modal-user')">Cancel</button>
+          <button class="btn btn-primary" style="width: auto" onclick="updateUser()">Save</button>
+        </div>
+      </div>
     </div>
-  </div>
 
-</main>
-
-<!-- Edit User Modal -->
-<div class="modal-overlay" id="modal-user">
-  <div class="modal">
-    <div class="modal-header">PUT /api/users/{id}</div>
-    <div class="modal-body">
-      <input type="hidden" id="edit-u-id">
-      <label>FULL_NAME</label>
-      <input id="edit-u-name" type="text">
-      <label>EMAIL</label>
-      <input id="edit-u-email" type="email">
+    <!-- Edit Document Modal -->
+    <div class="modal-overlay" id="modal-doc">
+      <div class="modal">
+        <div class="modal-header">PUT /api/documents/{id}</div>
+        <div class="modal-body">
+          <input type="hidden" id="edit-d-id" />
+          <label>Document type</label>
+          <input id="edit-d-type" type="text" />
+          <label>Document number</label>
+          <input id="edit-d-number" type="text" />
+          <label>User</label>
+          <select id="edit-d-user"></select>
+        </div>
+        <div class="modal-foot">
+          <button class="btn btn-ghost" onclick="closeModal('modal-doc')">Cancel</button>
+          <button class="btn btn-primary" style="width: auto" onclick="updateDocument()">Save</button>
+        </div>
+      </div>
     </div>
-    <div class="modal-foot">
-      <button class="btn btn-ghost" onclick="closeModal('modal-user')">CANCEL</button>
-      <button class="btn btn-primary" style="width:auto;" onclick="updateUser()">SAVE</button>
-    </div>
-  </div>
-</div>
 
-<!-- Edit Document Modal -->
-<div class="modal-overlay" id="modal-doc">
-  <div class="modal">
-    <div class="modal-header">PUT /api/documents/{id}</div>
-    <div class="modal-body">
-      <input type="hidden" id="edit-d-id">
-      <label>DOCUMENT_TYPE</label>
-      <input id="edit-d-type" type="text">
-      <label>DOCUMENT_NUMBER</label>
-      <input id="edit-d-number" type="text">
-      <label>USER_ID</label>
-      <select id="edit-d-user"></select>
-    </div>
-    <div class="modal-foot">
-      <button class="btn btn-ghost" onclick="closeModal('modal-doc')">CANCEL</button>
-      <button class="btn btn-primary" style="width:auto;" onclick="updateDocument()">SAVE</button>
-    </div>
-  </div>
-</div>
+    <div class="flash" id="flash"></div>
 
-<div class="flash" id="flash"></div>
-
-<script>
-const API = 'http://localhost:8080/api';
-let allUsers = [];
-
-function showPage(name) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('page-' + name).classList.add('active');
-  event.target.classList.add('active');
-  if (name === 'documents') { loadDocuments(); loadUsersForSelect(); }
-}
-
-function flash(msg, type = 'success') {
-  const el = document.getElementById('flash');
-  el.textContent = msg;
-  el.className = 'flash show ' + type;
-  setTimeout(() => el.classList.remove('show'), 2800);
-}
-
-function clearErrors(fields) {
-  fields.forEach(id => {
-    const inp = document.getElementById(id);
-    if (inp) inp.classList.remove('error');
-  });
-  document.querySelectorAll('.err-msg').forEach(e => {
-    e.textContent = '';
-    e.classList.remove('show');
-  });
-}
-
-function showError(field, errId, msg) {
-  const inp = document.getElementById(field);
-  const err = document.getElementById(errId);
-  if (inp) inp.classList.add('error');
-  if (err) { err.textContent = msg; err.classList.add('show'); }
-}
-
-async function api(method, path, body) {
-  const opts = { method, headers: { 'Content-Type': 'application/json' } };
-  if (body) opts.body = JSON.stringify(body);
-  const res = await fetch(API + path, opts);
-  const text = await res.text();
-  const data = text ? JSON.parse(text) : null;
-  return { ok: res.ok, status: res.status, data };
-}
-
-// ── USERS ──────────────────────────────────────────
-
-async function loadUsers() {
-  const { data } = await api('GET', '/users');
-  allUsers = data || [];
-  document.getElementById('users-count').textContent = allUsers.length;
-
-  const wrap = document.getElementById('users-table-wrap');
-  if (!allUsers.length) { wrap.innerHTML = '<div class="empty">no users found</div>'; return; }
-
-  wrap.innerHTML = `<table>
-    <thead><tr>
-      <th>ID</th><th>FULL_NAME</th><th>EMAIL</th><th>ACTIONS</th>
-    </tr></thead>
-    <tbody>${allUsers.map(u => `<tr>
-      <td class="id-cell">#${u.id}</td>
-      <td>${u.fullName}</td>
-      <td style="color:var(--muted)">${u.email}</td>
-      <td><div class="actions">
-        <button class="btn btn-ghost" onclick="openEditUser(${u.id},'${esc(u.fullName)}','${esc(u.email)}')">EDIT</button>
-        <button class="btn btn-danger" onclick="deleteUser(${u.id})">DEL</button>
-      </div></td>
-    </tr>`).join('')}</tbody>
-  </table>`;
-}
-
-async function createUser() {
-  clearErrors(['u-name','u-email']);
-  const fullName = document.getElementById('u-name').value.trim();
-  const email = document.getElementById('u-email').value.trim();
-
-  const { ok, data } = await api('POST', '/users', { fullName, email });
-  if (ok) {
-    document.getElementById('u-name').value = '';
-    document.getElementById('u-email').value = '';
-    flash('User created → #' + data.id);
-    loadUsers();
-  } else {
-    if (data.fullName) showError('u-name', 'err-u-name', data.fullName);
-    if (data.email)    showError('u-email', 'err-u-email', data.email);
-    flash('Validation error', 'error');
-  }
-}
-
-function openEditUser(id, name, email) {
-  document.getElementById('edit-u-id').value = id;
-  document.getElementById('edit-u-name').value = name;
-  document.getElementById('edit-u-email').value = email;
-  document.getElementById('modal-user').classList.add('open');
-}
-
-async function updateUser() {
-  const id = document.getElementById('edit-u-id').value;
-  const fullName = document.getElementById('edit-u-name').value.trim();
-  const email = document.getElementById('edit-u-email').value.trim();
-  const { ok } = await api('PUT', '/users/' + id, { fullName, email });
-  if (ok) { closeModal('modal-user'); flash('User updated'); loadUsers(); }
-  else flash('Validation error', 'error');
-}
-
-async function deleteUser(id) {
-  const { ok } = await api('DELETE', '/users/' + id);
-  if (ok) { flash('User deleted'); loadUsers(); }
-  else flash('User not found', 'error');
-}
-
-// ── DOCUMENTS ─────────────────────────────────────
-
-async function loadDocuments() {
-  const { data } = await api('GET', '/documents');
-  renderDocs(data || []);
-}
-
-async function searchDocuments() {
-  const type = document.getElementById('search-type').value.trim();
-  if (!type) { loadDocuments(); return; }
-  const { data } = await api('GET', '/documents/search?type=' + encodeURIComponent(type));
-  renderDocs(data || []);
-}
-
-function renderDocs(docs) {
-  document.getElementById('docs-count').textContent = docs.length;
-  const wrap = document.getElementById('docs-table-wrap');
-  if (!docs.length) { wrap.innerHTML = '<div class="empty">no documents found</div>'; return; }
-
-  wrap.innerHTML = `<table>
-    <thead><tr>
-      <th>ID</th><th>TYPE</th><th>NUMBER</th><th>OWNER</th><th>ACTIONS</th>
-    </tr></thead>
-    <tbody>${docs.map(d => `<tr>
-      <td class="id-cell">#${d.id}</td>
-      <td><span class="type-tag">${d.documentType}</span></td>
-      <td>${d.documentNumber}</td>
-      <td style="color:var(--muted)">${d.ownerName}</td>
-      <td><div class="actions">
-        <button class="btn btn-ghost" onclick="openEditDoc(${d.id},'${esc(d.documentType)}','${esc(d.documentNumber)}')">EDIT</button>
-        <button class="btn btn-danger" onclick="deleteDocument(${d.id})">DEL</button>
-      </div></td>
-    </tr>`).join('')}</tbody>
-  </table>`;
-}
-
-async function loadUsersForSelect() {
-  if (!allUsers.length) {
-    const { data } = await api('GET', '/users');
-    allUsers = data || [];
-  }
-  ['d-user','edit-d-user'].forEach(id => {
-    const sel = document.getElementById(id);
-    if (!sel) return;
-    sel.innerHTML = '<option value="">— select user —</option>' +
-      allUsers.map(u => `<option value="${u.id}">${u.fullName}</option>`).join('');
-  });
-}
-
-async function createDocument() {
-  clearErrors(['d-type','d-number','d-user']);
-  const documentType   = document.getElementById('d-type').value.trim();
-  const documentNumber = document.getElementById('d-number').value.trim();
-  const userId         = document.getElementById('d-user').value;
-
-  const { ok, data } = await api('POST', '/documents', {
-    documentType, documentNumber, userId: userId ? Number(userId) : null
-  });
-
-  if (ok) {
-    document.getElementById('d-type').value   = '';
-    document.getElementById('d-number').value = '';
-    document.getElementById('d-user').value   = '';
-    flash('Document created → #' + data.id);
-    loadDocuments();
-  } else {
-    if (data.documentType)   showError('d-type',   'err-d-type',   data.documentType);
-    if (data.documentNumber) showError('d-number', 'err-d-number', data.documentNumber);
-    if (data.userId)         showError('d-user',   'err-d-user',   data.userId);
-    flash('Validation error', 'error');
-  }
-}
-
-function openEditDoc(id, type, number) {
-  document.getElementById('edit-d-id').value     = id;
-  document.getElementById('edit-d-type').value   = type;
-  document.getElementById('edit-d-number').value = number;
-  loadUsersForSelect();
-  document.getElementById('modal-doc').classList.add('open');
-}
-
-async function updateDocument() {
-  const id             = document.getElementById('edit-d-id').value;
-  const documentType   = document.getElementById('edit-d-type').value.trim();
-  const documentNumber = document.getElementById('edit-d-number').value.trim();
-  const userId         = document.getElementById('edit-d-user').value;
-  const { ok } = await api('PUT', '/documents/' + id, {
-    documentType, documentNumber, userId: userId ? Number(userId) : null
-  });
-  if (ok) { closeModal('modal-doc'); flash('Document updated'); loadDocuments(); }
-  else flash('Validation error', 'error');
-}
-
-async function deleteDocument(id) {
-  const { ok } = await api('DELETE', '/documents/' + id);
-  if (ok) { flash('Document deleted'); loadDocuments(); }
-  else flash('Document not found', 'error');
-}
-
-function closeModal(id) {
-  document.getElementById(id).classList.remove('open');
-}
-
-function esc(s) {
-  return String(s).replace(/'/g, "\\'");
-}
-
-// init
-loadUsers();
-</script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

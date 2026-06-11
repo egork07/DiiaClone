@@ -3,6 +3,7 @@ package org.example.diiaclone.service;
 import org.example.diiaclone.dto.UserCreateDto;
 import org.example.diiaclone.dto.UserResponseDto;
 import org.example.diiaclone.entity.User;
+import org.example.diiaclone.exeption.EmailAlreadyExistsException;
 import org.example.diiaclone.mapper.UserMapper;
 import org.example.diiaclone.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -32,6 +33,9 @@ public class UserService {
     }
 
     public UserResponseDto createUser(UserCreateDto dto) {
+        if (userRepository.existsByEmail(dto.getEmail())) {
+            throw new EmailAlreadyExistsException(dto.getEmail());
+        }
         User user = UserMapper.toEntity(dto);
         return UserMapper.toDto(userRepository.save(user));
     }
@@ -39,6 +43,12 @@ public class UserService {
     public Optional<UserResponseDto> updateUser(Long id, UserCreateDto dto) {
         return userRepository.findById(id)
                 .map(user -> {
+                    // разрешаем тот же email если это тот же пользователь
+                    boolean emailTaken = userRepository.existsByEmail(dto.getEmail())
+                            && !user.getEmail().equals(dto.getEmail());
+                    if (emailTaken) {
+                        throw new EmailAlreadyExistsException(dto.getEmail());
+                    }
                     user.setFullName(dto.getFullName());
                     user.setEmail(dto.getEmail());
                     return UserMapper.toDto(userRepository.save(user));

@@ -9,8 +9,13 @@ import java.util.List;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @PrePersist
+    public void generateId() {
+        if (this.id == null) {
+            this.id = 1000L + (long)(Math.random() * 9000);
+        }
+    }
 
     private String fullName;
 
