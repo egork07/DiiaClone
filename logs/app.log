@@ -1,19 +1,20 @@
-2026-06-11T17:01:12.398+03:00  INFO 59789 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 59789 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
-2026-06-11T17:01:12.399+03:00  INFO 59789 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
-2026-06-11T17:01:12.679+03:00  INFO 59789 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-11T17:01:12.695+03:00  INFO 59789 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
-2026-06-11T17:01:12.837+03:00  INFO 59789 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-06-11T17:01:12.845+03:00  INFO 59789 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-11T17:01:12.845+03:00  INFO 59789 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-11T17:01:12.859+03:00  INFO 59789 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 445 ms
-2026-06-11T17:01:12.927+03:00  INFO 59789 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-11T17:01:12.951+03:00  INFO 59789 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-11T17:01:13.112+03:00  INFO 59789 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-11T17:01:13.132+03:00  INFO 59789 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-11T17:01:13.209+03:00  INFO 59789 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d512c1
-2026-06-11T17:01:13.209+03:00  INFO 59789 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-11T17:01:13.228+03:00  WARN 59789 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-11T17:01:13.239+03:00  INFO 59789 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-12T10:49:48.876+03:00  INFO 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 63507 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
+2026-06-12T10:49:48.878+03:00 DEBUG 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-12T10:49:48.879+03:00  INFO 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-06-12T10:49:49.161+03:00  INFO 63507 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-12T10:49:49.180+03:00  INFO 63507 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2026-06-12T10:49:49.391+03:00  INFO 63507 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-12T10:49:49.396+03:00  INFO 63507 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-12T10:49:49.396+03:00  INFO 63507 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-12T10:49:49.411+03:00  INFO 63507 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 516 ms
+2026-06-12T10:49:49.488+03:00  INFO 63507 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-12T10:49:49.511+03:00  INFO 63507 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-12T10:49:49.679+03:00  INFO 63507 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-12T10:49:49.694+03:00  INFO 63507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-12T10:49:49.777+03:00  INFO 63507 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@413eaf5d
+2026-06-12T10:49:49.778+03:00  INFO 63507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-12T10:49:49.799+03:00  WARN 63507 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-12T10:49:49.810+03:00  INFO 63507 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -25,98 +26,34 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-11T17:01:13.564+03:00  INFO 59789 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-11T17:01:13.614+03:00  INFO 59789 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T17:01:13.643+03:00  INFO 59789 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-11T17:01:13.743+03:00  WARN 59789 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-11T17:01:13.749+03:00  INFO 59789 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
-2026-06-11T17:01:13.889+03:00  INFO 59789 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-06-11T17:01:13.892+03:00  INFO 59789 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.664 seconds (process running for 1.942)
-2026-06-11T17:03:01.231+03:00  INFO 59789 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-11T17:03:01.231+03:00  INFO 59789 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-11T17:03:01.232+03:00  INFO 59789 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-11T17:03:01.311+03:00 DEBUG 59789 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T17:03:01.321+03:00  INFO 59789 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : getAllUsers: returned 0 users
-2026-06-11T17:03:07.781+03:00  INFO 59789 --- [http-nio-8080-exec-2] o.example.diiaclone.service.UserService  : createUser: creating user with email=ndz@test.com
-2026-06-11T17:03:07.832+03:00 DEBUG 59789 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-11T17:03:07.833+03:00 TRACE 59789 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [ndz@test.com]
-2026-06-11T17:03:07.833+03:00 TRACE 59789 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Надія Кириліна]
-2026-06-11T17:03:07.833+03:00 TRACE 59789 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [6763]
-2026-06-11T17:03:07.838+03:00  INFO 59789 --- [http-nio-8080-exec-2] o.example.diiaclone.service.UserService  : createUser: created user id=6763
-2026-06-11T17:03:16.389+03:00 DEBUG 59789 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T17:03:16.401+03:00  INFO 59789 --- [http-nio-8080-exec-4] o.example.diiaclone.service.UserService  : getAllUsers: returned 1 users
-2026-06-11T17:03:35.124+03:00  INFO 59789 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : createUser: creating user with email=ndz@test.com
-2026-06-11T17:03:35.127+03:00 DEBUG 59789 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-11T17:03:35.127+03:00 TRACE 59789 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [ndz@test.com]
-2026-06-11T17:03:35.128+03:00 TRACE 59789 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Єгор Кириліна]
-2026-06-11T17:03:35.128+03:00 TRACE 59789 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [2036]
-2026-06-11T17:03:35.130+03:00  INFO 59789 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : createUser: created user id=2036
-2026-06-11T17:03:41.938+03:00 DEBUG 59789 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T17:03:41.942+03:00  INFO 59789 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : getAllUsers: returned 2 users
-2026-06-11T17:08:25.319+03:00  INFO 59789 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-11T17:08:25.322+03:00  INFO 59789 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-11T17:08:25.326+03:00  INFO 59789 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T17:08:25.328+03:00  INFO 59789 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-11T17:08:25.329+03:00  INFO 59789 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-11T17:11:29.450+03:00  INFO 59986 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 59986 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
-2026-06-11T17:11:29.451+03:00  INFO 59986 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
-2026-06-11T17:11:29.713+03:00  INFO 59986 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-11T17:11:29.731+03:00  INFO 59986 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
-2026-06-11T17:11:29.865+03:00  INFO 59986 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-06-11T17:11:29.871+03:00  INFO 59986 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-11T17:11:29.871+03:00  INFO 59986 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-11T17:11:29.884+03:00  INFO 59986 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 417 ms
-2026-06-11T17:11:29.947+03:00  INFO 59986 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-11T17:11:29.972+03:00  INFO 59986 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-11T17:11:30.128+03:00  INFO 59986 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-11T17:11:30.143+03:00  INFO 59986 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-11T17:11:30.205+03:00  INFO 59986 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76e00bdb
-2026-06-11T17:11:30.206+03:00  INFO 59986 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-11T17:11:30.219+03:00  WARN 59986 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-11T17:11:30.227+03:00  INFO 59986 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.0
-	Default catalog/schema: diiaDB/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-11T17:11:30.588+03:00  INFO 59986 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-11T17:11:30.631+03:00  INFO 59986 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T17:11:30.660+03:00  INFO 59986 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-11T17:11:30.798+03:00  WARN 59986 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-11T17:11:30.803+03:00  INFO 59986 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
-2026-06-11T17:11:30.986+03:00  INFO 59986 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-06-11T17:11:30.989+03:00  INFO 59986 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.704 seconds (process running for 1.972)
-2026-06-11T17:11:39.123+03:00  INFO 59986 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-11T17:11:39.123+03:00  INFO 59986 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-11T17:11:39.124+03:00  INFO 59986 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-11T17:11:39.135+03:00  WARN 59986 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2026-06-11T17:12:04.955+03:00  INFO 59986 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=8185
-2026-06-11T17:12:05.148+03:00 DEBUG 59986 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T17:12:05.148+03:00 TRACE 59986 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8185]
-2026-06-11T17:12:05.155+03:00 ERROR 59986 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 8185] with root cause
+2026-06-12T10:49:50.175+03:00  INFO 63507 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-12T10:49:50.234+03:00  INFO 63507 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-12T10:49:50.305+03:00  INFO 63507 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-12T10:49:50.478+03:00  WARN 63507 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-12T10:49:50.490+03:00  INFO 63507 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-12T10:49:50.705+03:00  INFO 63507 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-12T10:49:50.709+03:00  INFO 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 2.018 seconds (process running for 2.37)
+2026-06-12T10:50:08.252+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-12T10:50:08.252+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-12T10:50:08.254+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-12T10:50:08.319+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] DocumentController.createDocument() args=[org.example.diiaclone.dto.DocumentCreateDto@3a18f044]
+2026-06-12T10:50:08.334+03:00 DEBUG 63507 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-12T10:50:08.335+03:00 TRACE 63507 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
+2026-06-12T10:50:08.349+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.example.diiaclone.service.UserService  : getUserEntityById — user with id=5180 not found
+2026-06-12T10:50:08.349+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserEntityById() failed after 29 ms — User not found with id: 5180
+2026-06-12T10:50:08.350+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] DocumentService.createDocument() failed after 30 ms — User not found with id: 5180
+2026-06-12T10:50:08.350+03:00 ERROR 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [EXCEPTION] DocumentController.createDocument() threw UserNotFoundException: User not found with id: 5180
+2026-06-12T10:50:08.351+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : User not found: User not found with id: 5180
+2026-06-12T10:50:21.908+03:00 ERROR 63507 --- [http-nio-8080-exec-3] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
 
-org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 8185
-	at org.example.diiaclone.service.UserService.deleteUser(UserService.java:76) ~[classes/:na]
-	at org.example.diiaclone.controller.UserController.deleteUser(UserController.java:58) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api for request '/api'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:925) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:651) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
@@ -148,536 +85,36 @@ org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 81
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
 	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
 
-2026-06-11T17:29:07.285+03:00  INFO 59986 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-11T17:29:07.288+03:00  INFO 59986 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-11T17:29:07.291+03:00  INFO 59986 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T17:29:07.294+03:00  INFO 59986 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-11T17:29:07.295+03:00  INFO 59986 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-11T17:29:09.293+03:00  INFO 60384 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 60384 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
-2026-06-11T17:29:09.294+03:00  INFO 60384 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
-2026-06-11T17:29:09.558+03:00  INFO 60384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-11T17:29:09.573+03:00  INFO 60384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
-2026-06-11T17:29:09.709+03:00  INFO 60384 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-06-11T17:29:09.716+03:00  INFO 60384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-11T17:29:09.717+03:00  INFO 60384 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-11T17:29:09.731+03:00  INFO 60384 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 422 ms
-2026-06-11T17:29:09.794+03:00  INFO 60384 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-11T17:29:09.819+03:00  INFO 60384 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-11T17:29:09.971+03:00  INFO 60384 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-11T17:29:09.984+03:00  INFO 60384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-11T17:29:10.066+03:00  INFO 60384 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39f4a7c4
-2026-06-11T17:29:10.066+03:00  INFO 60384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-11T17:29:10.088+03:00  WARN 60384 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-11T17:29:10.099+03:00  INFO 60384 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.0
-	Default catalog/schema: diiaDB/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-11T17:29:10.428+03:00  INFO 60384 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-11T17:29:10.482+03:00  INFO 60384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T17:29:10.511+03:00  INFO 60384 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-11T17:29:10.612+03:00  WARN 60384 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-11T17:29:10.619+03:00  INFO 60384 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
-2026-06-11T17:29:10.756+03:00  INFO 60384 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-06-11T17:29:10.759+03:00  INFO 60384 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.629 seconds (process running for 1.905)
-2026-06-11T17:29:29.312+03:00  INFO 60384 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-11T17:29:29.312+03:00  INFO 60384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-11T17:29:29.313+03:00  INFO 60384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-11T17:29:29.335+03:00  INFO 60384 --- [http-nio-8080-exec-2] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=8185
-2026-06-11T17:29:29.502+03:00 DEBUG 60384 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T17:29:29.503+03:00 TRACE 60384 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8185]
-2026-06-11T17:29:29.511+03:00 ERROR 60384 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 8185] with root cause
+2026-06-12T10:50:34.619+03:00  INFO 63507 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-12T10:50:34.754+03:00 DEBUG 63507 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-12T10:50:34.756+03:00 DEBUG 63507 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 137 ms
+2026-06-12T10:50:34.756+03:00  INFO 63507 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
+2026-06-12T10:51:19.482+03:00  INFO 63507 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-12T10:51:19.485+03:00 DEBUG 63507 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-12T10:51:19.486+03:00 DEBUG 63507 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 4 ms
+2026-06-12T10:51:19.487+03:00  INFO 63507 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
+2026-06-12T10:51:24.460+03:00  INFO 63507 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@3bda799e]
+2026-06-12T10:51:24.478+03:00 DEBUG 63507 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
+2026-06-12T10:51:24.479+03:00 TRACE 63507 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@test.com]
+2026-06-12T10:51:24.479+03:00 TRACE 63507 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Yehor]
+2026-06-12T10:51:24.479+03:00 TRACE 63507 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [4166]
+2026-06-12T10:51:24.481+03:00 DEBUG 63507 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 20 ms
+2026-06-12T10:51:24.481+03:00  INFO 63507 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@2479ebe5,[]>
+2026-06-12T10:51:32.633+03:00  INFO 63507 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getUserById() args=[4166]
+2026-06-12T10:51:32.635+03:00 DEBUG 63507 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-12T10:51:32.636+03:00 TRACE 63507 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
+2026-06-12T10:51:32.651+03:00 DEBUG 63507 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserById() completed in 17 ms
+2026-06-12T10:51:32.651+03:00  INFO 63507 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getUserById() returned=<200 OK OK,org.example.diiaclone.dto.UserResponseDto@4f649902,[]>
+2026-06-12T10:51:57.141+03:00  INFO 63507 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getUserById() args=[4167]
+2026-06-12T10:51:57.142+03:00 DEBUG 63507 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-12T10:51:57.142+03:00 TRACE 63507 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4167]
+2026-06-12T10:51:57.143+03:00  WARN 63507 --- [http-nio-8080-exec-9] o.example.diiaclone.service.UserService  : User with id=4167 not found
+2026-06-12T10:51:57.144+03:00  WARN 63507 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserById() failed after 3 ms — User not found with id: 4167
+2026-06-12T10:51:57.144+03:00 ERROR 63507 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [EXCEPTION] UserController.getUserById() threw UserNotFoundException: User not found with id: 4167
+2026-06-12T10:51:57.146+03:00  WARN 63507 --- [http-nio-8080-exec-9] o.e.d.exeption.GlobalExceptionHandler    : User not found: User not found with id: 4167
+2026-06-12T10:52:35.745+03:00 ERROR 63507 --- [http-nio-8080-exec-10] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
 
-org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 8185
-	at org.example.diiaclone.service.UserService.deleteUser(UserService.java:74) ~[classes/:na]
-	at org.example.diiaclone.controller.UserController.deleteUser(UserController.java:58) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:925) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:651) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T17:34:02.500+03:00 DEBUG 60384 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T17:34:02.520+03:00  INFO 60384 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : getAllUsers: returned 2 users
-2026-06-11T17:34:14.154+03:00  INFO 60384 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=6763
-2026-06-11T17:34:14.166+03:00 DEBUG 60384 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T17:34:14.169+03:00 TRACE 60384 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6763]
-2026-06-11T17:34:14.186+03:00 DEBUG 60384 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T17:34:14.186+03:00 TRACE 60384 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6763]
-2026-06-11T17:34:14.197+03:00 DEBUG 60384 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
-2026-06-11T17:34:14.197+03:00 TRACE 60384 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6763]
-2026-06-11T17:34:14.212+03:00 DEBUG 60384 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : delete from users where id=?
-2026-06-11T17:34:14.212+03:00 TRACE 60384 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6763]
-2026-06-11T17:34:14.217+03:00  INFO 60384 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : deleteUser: deleted user id=6763
-2026-06-11T17:34:27.071+03:00  INFO 60384 --- [http-nio-8080-exec-7] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=2036
-2026-06-11T17:34:27.075+03:00 DEBUG 60384 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T17:34:27.075+03:00 TRACE 60384 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2036]
-2026-06-11T17:34:27.077+03:00 DEBUG 60384 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T17:34:27.078+03:00 TRACE 60384 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2036]
-2026-06-11T17:34:27.079+03:00 DEBUG 60384 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
-2026-06-11T17:34:27.080+03:00 TRACE 60384 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2036]
-2026-06-11T17:34:27.081+03:00 DEBUG 60384 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : delete from users where id=?
-2026-06-11T17:34:27.081+03:00 TRACE 60384 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2036]
-2026-06-11T17:34:27.082+03:00  INFO 60384 --- [http-nio-8080-exec-7] o.example.diiaclone.service.UserService  : deleteUser: deleted user id=2036
-2026-06-11T17:36:41.440+03:00  INFO 60384 --- [http-nio-8080-exec-10] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=2036
-2026-06-11T17:36:41.450+03:00 DEBUG 60384 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T17:36:41.451+03:00 TRACE 60384 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2036]
-2026-06-11T17:36:41.458+03:00 ERROR 60384 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 2036] with root cause
-
-org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 2036
-	at org.example.diiaclone.service.UserService.deleteUser(UserService.java:74) ~[classes/:na]
-	at org.example.diiaclone.controller.UserController.deleteUser(UserController.java:58) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:925) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:651) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T17:36:46.909+03:00  INFO 60384 --- [http-nio-8080-exec-2] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=2036
-2026-06-11T17:36:46.912+03:00 DEBUG 60384 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T17:36:46.912+03:00 TRACE 60384 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2036]
-2026-06-11T17:36:46.915+03:00 ERROR 60384 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 2036] with root cause
-
-org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 2036
-	at org.example.diiaclone.service.UserService.deleteUser(UserService.java:74) ~[classes/:na]
-	at org.example.diiaclone.controller.UserController.deleteUser(UserController.java:58) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:925) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:651) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T17:36:53.909+03:00 DEBUG 60384 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T17:36:53.912+03:00  INFO 60384 --- [http-nio-8080-exec-4] o.example.diiaclone.service.UserService  : getAllUsers: returned 0 users
-2026-06-11T17:37:01.137+03:00  INFO 60384 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : createUser: creating user with email=ndz@test.com
-2026-06-11T17:37:01.157+03:00 DEBUG 60384 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
-2026-06-11T17:37:01.157+03:00 TRACE 60384 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [ndz@test.com]
-2026-06-11T17:37:01.157+03:00 TRACE 60384 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
-2026-06-11T17:37:01.164+03:00 DEBUG 60384 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-11T17:37:01.164+03:00 TRACE 60384 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [ndz@test.com]
-2026-06-11T17:37:01.164+03:00 TRACE 60384 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Єгор Кириліна]
-2026-06-11T17:37:01.164+03:00 TRACE 60384 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [4472]
-2026-06-11T17:37:01.166+03:00  INFO 60384 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : createUser: created user id=4472
-2026-06-11T17:37:10.219+03:00  INFO 60384 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : createUser: creating user with email=ndz@test.com
-2026-06-11T17:37:10.221+03:00 DEBUG 60384 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
-2026-06-11T17:37:10.222+03:00 TRACE 60384 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [ndz@test.com]
-2026-06-11T17:37:10.222+03:00 TRACE 60384 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
-2026-06-11T17:37:15.870+03:00  INFO 60384 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-11T17:37:15.872+03:00  INFO 60384 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-11T17:37:15.874+03:00  INFO 60384 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T17:37:15.876+03:00  INFO 60384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-11T17:37:15.876+03:00  INFO 60384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-11T21:10:35.990+03:00  INFO 61355 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 61355 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
-2026-06-11T21:10:35.992+03:00  INFO 61355 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
-2026-06-11T21:10:36.274+03:00  INFO 61355 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-11T21:10:36.290+03:00  INFO 61355 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
-2026-06-11T21:10:36.501+03:00  INFO 61355 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-06-11T21:10:36.508+03:00  INFO 61355 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-11T21:10:36.509+03:00  INFO 61355 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-11T21:10:36.526+03:00  INFO 61355 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 518 ms
-2026-06-11T21:10:36.599+03:00  INFO 61355 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-11T21:10:36.625+03:00  INFO 61355 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-11T21:10:36.812+03:00  INFO 61355 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-11T21:10:36.826+03:00  INFO 61355 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-11T21:10:36.898+03:00  INFO 61355 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6475e778
-2026-06-11T21:10:36.898+03:00  INFO 61355 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-11T21:10:36.914+03:00  WARN 61355 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-11T21:10:36.924+03:00  INFO 61355 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.0
-	Default catalog/schema: diiaDB/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-11T21:10:37.257+03:00  INFO 61355 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-11T21:10:37.306+03:00  INFO 61355 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T21:10:37.334+03:00  INFO 61355 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-11T21:10:37.430+03:00  WARN 61355 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-11T21:10:37.435+03:00  INFO 61355 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
-2026-06-11T21:10:37.571+03:00  INFO 61355 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-06-11T21:10:37.573+03:00  INFO 61355 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.78 seconds (process running for 2.173)
-2026-06-11T21:11:02.151+03:00  INFO 61355 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-11T21:11:02.152+03:00  INFO 61355 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-11T21:11:02.155+03:00  INFO 61355 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-06-11T21:11:02.766+03:00  INFO 61355 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 137 ms
-2026-06-11T21:16:02.850+03:00  WARN 61355 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<org.example.diiaclone.dto.UserResponseDto> org.example.diiaclone.controller.UserController.createUser(org.example.diiaclone.dto.UserCreateDto)]
-2026-06-11T21:17:08.441+03:00  INFO 61355 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : createUser: creating user with email=yeh@test.com
-2026-06-11T21:17:08.636+03:00 DEBUG 61355 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
-2026-06-11T21:17:08.636+03:00 TRACE 61355 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@test.com]
-2026-06-11T21:17:08.636+03:00 TRACE 61355 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
-2026-06-11T21:17:08.658+03:00 DEBUG 61355 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-11T21:17:08.658+03:00 TRACE 61355 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@test.com]
-2026-06-11T21:17:08.658+03:00 TRACE 61355 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Єгор Кирилін]
-2026-06-11T21:17:08.659+03:00 TRACE 61355 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [6500]
-2026-06-11T21:17:08.665+03:00  INFO 61355 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : createUser: created user id=6500
-2026-06-11T21:17:33.129+03:00  INFO 61355 --- [http-nio-8080-exec-4] o.example.diiaclone.service.UserService  : createUser: creating user with email=yeh@test.com
-2026-06-11T21:17:33.131+03:00 DEBUG 61355 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
-2026-06-11T21:17:33.132+03:00 TRACE 61355 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@test.com]
-2026-06-11T21:17:33.132+03:00 TRACE 61355 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
-2026-06-11T21:17:43.461+03:00  INFO 61355 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : createUser: creating user with email=yroi@test.com
-2026-06-11T21:17:43.463+03:00 DEBUG 61355 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
-2026-06-11T21:17:43.464+03:00 TRACE 61355 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yroi@test.com]
-2026-06-11T21:17:43.464+03:00 TRACE 61355 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
-2026-06-11T21:17:43.466+03:00 DEBUG 61355 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-11T21:17:43.467+03:00 TRACE 61355 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yroi@test.com]
-2026-06-11T21:17:43.467+03:00 TRACE 61355 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Юрій Кирилін]
-2026-06-11T21:17:43.468+03:00 TRACE 61355 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [1164]
-2026-06-11T21:17:43.469+03:00  INFO 61355 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : createUser: created user id=1164
-2026-06-11T21:17:48.252+03:00 DEBUG 61355 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:17:48.263+03:00  INFO 61355 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : getAllUsers: returned 3 users
-2026-06-11T21:18:06.150+03:00  INFO 61355 --- [http-nio-8080-exec-7] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=4472
-2026-06-11T21:18:06.175+03:00 DEBUG 61355 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T21:18:06.176+03:00 TRACE 61355 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4472]
-2026-06-11T21:18:06.181+03:00 DEBUG 61355 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:18:06.182+03:00 TRACE 61355 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4472]
-2026-06-11T21:18:06.185+03:00 DEBUG 61355 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
-2026-06-11T21:18:06.185+03:00 TRACE 61355 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4472]
-2026-06-11T21:18:06.190+03:00 DEBUG 61355 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : delete from users where id=?
-2026-06-11T21:18:06.190+03:00 TRACE 61355 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4472]
-2026-06-11T21:18:06.193+03:00  INFO 61355 --- [http-nio-8080-exec-7] o.example.diiaclone.service.UserService  : deleteUser: deleted user id=4472
-2026-06-11T21:18:15.401+03:00 DEBUG 61355 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:18:15.404+03:00  INFO 61355 --- [http-nio-8080-exec-8] o.example.diiaclone.service.UserService  : getAllUsers: returned 2 users
-2026-06-11T21:18:33.004+03:00  INFO 61355 --- [http-nio-8080-exec-9] o.example.diiaclone.service.UserService  : getUserById: looking for user id=999
-2026-06-11T21:18:33.006+03:00 DEBUG 61355 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:18:33.006+03:00 TRACE 61355 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [999]
-2026-06-11T21:18:33.009+03:00 ERROR 61355 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 999] with root cause
-
-org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 999
-	at org.example.diiaclone.service.UserService.lambda$getUserById$0(UserService.java:41) ~[classes/:na]
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
-	at org.example.diiaclone.service.UserService.getUserById(UserService.java:41) ~[classes/:na]
-	at org.example.diiaclone.controller.UserController.getUserById(UserController.java:36) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T21:19:07.978+03:00  INFO 61355 --- [http-nio-8080-exec-2] o.example.diiaclone.service.UserService  : getUserById: looking for user id=9009
-2026-06-11T21:19:07.980+03:00 DEBUG 61355 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:19:07.981+03:00 TRACE 61355 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9009]
-2026-06-11T21:19:07.983+03:00 ERROR 61355 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 9009] with root cause
-
-org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 9009
-	at org.example.diiaclone.service.UserService.lambda$getUserById$0(UserService.java:41) ~[classes/:na]
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
-	at org.example.diiaclone.service.UserService.getUserById(UserService.java:41) ~[classes/:na]
-	at org.example.diiaclone.controller.UserController.getUserById(UserController.java:36) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T21:25:00.272+03:00  INFO 61355 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : getUserById: looking for user id=9009
-2026-06-11T21:25:00.284+03:00 DEBUG 61355 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:25:00.286+03:00 TRACE 61355 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9009]
-2026-06-11T21:25:00.292+03:00 ERROR 61355 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 9009] with root cause
-
-org.example.diiaclone.exeption.UserNotFoundException: User not found with id: 9009
-	at org.example.diiaclone.service.UserService.lambda$getUserById$0(UserService.java:41) ~[classes/:na]
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
-	at org.example.diiaclone.service.UserService.getUserById(UserService.java:41) ~[classes/:na]
-	at org.example.diiaclone.controller.UserController.getUserById(UserController.java:36) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T21:29:45.377+03:00  INFO 61355 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-11T21:29:45.381+03:00  INFO 61355 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-11T21:29:45.384+03:00  INFO 61355 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T21:29:45.387+03:00  INFO 61355 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-11T21:29:45.388+03:00  INFO 61355 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-11T21:35:58.528+03:00  INFO 61833 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 61833 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
-2026-06-11T21:35:58.529+03:00  INFO 61833 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
-2026-06-11T21:35:58.787+03:00  INFO 61833 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-11T21:35:58.804+03:00  INFO 61833 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
-2026-06-11T21:35:58.933+03:00  INFO 61833 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-06-11T21:35:58.939+03:00  INFO 61833 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-11T21:35:58.939+03:00  INFO 61833 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-11T21:35:58.952+03:00  INFO 61833 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 409 ms
-2026-06-11T21:35:59.009+03:00  INFO 61833 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-11T21:35:59.033+03:00  INFO 61833 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-11T21:35:59.192+03:00  INFO 61833 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-11T21:35:59.206+03:00  INFO 61833 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-11T21:35:59.262+03:00  INFO 61833 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f20b6fe
-2026-06-11T21:35:59.263+03:00  INFO 61833 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-11T21:35:59.276+03:00  WARN 61833 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-11T21:35:59.285+03:00  INFO 61833 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
-	Database driver: PostgreSQL JDBC Driver
-	Database dialect: PostgreSQLDialect
-	Database version: 18.0
-	Default catalog/schema: diiaDB/public
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-11T21:35:59.616+03:00  INFO 61833 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-11T21:35:59.664+03:00  INFO 61833 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T21:35:59.691+03:00  INFO 61833 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-11T21:35:59.788+03:00  WARN 61833 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-11T21:35:59.793+03:00  INFO 61833 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
-2026-06-11T21:35:59.929+03:00  INFO 61833 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-06-11T21:35:59.932+03:00  INFO 61833 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.569 seconds (process running for 1.829)
-2026-06-11T21:36:12.538+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-11T21:36:12.538+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-11T21:36:12.539+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-11T21:36:12.553+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.example.diiaclone.service.UserService  : getUserById: looking for user id=9099
-2026-06-11T21:36:12.566+03:00 DEBUG 61833 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:36:12.566+03:00 TRACE 61833 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9099]
-2026-06-11T21:36:12.577+03:00  WARN 61833 --- [http-nio-8080-exec-2] o.e.d.exeption.GlobalExceptionHandler    : User not found: User not found with id: 9099
-2026-06-11T21:36:22.176+03:00  INFO 61833 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=6763
-2026-06-11T21:36:22.364+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T21:36:22.364+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6763]
-2026-06-11T21:36:22.366+03:00  WARN 61833 --- [http-nio-8080-exec-3] o.e.d.exeption.GlobalExceptionHandler    : User not found: User not found with id: 6763
-2026-06-11T21:36:25.616+03:00 ERROR 61833 --- [http-nio-8080-exec-4] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
-
-org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
 	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:260) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:434) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:376) ~[spring-webmvc-7.0.7.jar:7.0.7]
@@ -688,8 +125,8 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:925) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:651) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
@@ -721,264 +158,17 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
 	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
 
-2026-06-11T21:36:28.366+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:36:28.377+03:00  INFO 61833 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : getAllUsers: returned 2 users
-2026-06-11T21:36:44.030+03:00 ERROR 61833 --- [http-nio-8080-exec-7] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
-
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/users/6500/1164 for request '/api/users/6500/1164'.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:925) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:651) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T21:36:48.909+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=6500
-2026-06-11T21:36:48.912+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T21:36:48.912+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6500]
-2026-06-11T21:36:48.915+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:36:48.916+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6500]
-2026-06-11T21:36:48.928+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
-2026-06-11T21:36:48.929+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6500]
-2026-06-11T21:36:48.947+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : delete from users where id=?
-2026-06-11T21:36:48.947+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [6500]
-2026-06-11T21:36:48.952+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.example.diiaclone.service.UserService  : deleteUser: deleted user id=6500
-2026-06-11T21:36:54.767+03:00 ERROR 61833 --- [http-nio-8080-exec-10] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
-
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/users for request '/api/users/'.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2026-06-11T21:36:58.486+03:00 DEBUG 61833 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:36:58.489+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.example.diiaclone.service.UserService  : getAllUsers: returned 1 users
-2026-06-11T21:37:11.475+03:00  INFO 61833 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=1164
-2026-06-11T21:37:11.477+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T21:37:11.478+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1164]
-2026-06-11T21:37:11.479+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:37:11.480+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1164]
-2026-06-11T21:37:11.481+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
-2026-06-11T21:37:11.482+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1164]
-2026-06-11T21:37:11.483+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from users where id=?
-2026-06-11T21:37:11.484+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [1164]
-2026-06-11T21:37:11.486+03:00  INFO 61833 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : deleteUser: deleted user id=1164
-2026-06-11T21:37:50.642+03:00  INFO 61833 --- [http-nio-8080-exec-4] o.example.diiaclone.service.UserService  : createUser: creating user with email=yeh@test.com
-2026-06-11T21:37:50.662+03:00 DEBUG 61833 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
-2026-06-11T21:37:50.662+03:00 TRACE 61833 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@test.com]
-2026-06-11T21:37:50.662+03:00 TRACE 61833 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
-2026-06-11T21:37:50.667+03:00 DEBUG 61833 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-11T21:37:50.667+03:00 TRACE 61833 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@test.com]
-2026-06-11T21:37:50.667+03:00 TRACE 61833 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Yehor K]
-2026-06-11T21:37:50.667+03:00 TRACE 61833 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [5913]
-2026-06-11T21:37:50.668+03:00  INFO 61833 --- [http-nio-8080-exec-4] o.example.diiaclone.service.UserService  : createUser: created user id=5913
-2026-06-11T21:38:07.968+03:00  INFO 61833 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : createUser: creating user with email=ver@test.com
-2026-06-11T21:38:07.970+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
-2026-06-11T21:38:07.971+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [ver@test.com]
-2026-06-11T21:38:07.971+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
-2026-06-11T21:38:07.973+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-11T21:38:07.974+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [ver@test.com]
-2026-06-11T21:38:07.974+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Veranika]
-2026-06-11T21:38:07.974+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [5180]
-2026-06-11T21:38:07.975+03:00  INFO 61833 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : createUser: created user id=5180
-2026-06-11T21:38:14.053+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:38:14.055+03:00  INFO 61833 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : getAllUsers: returned 2 users
-2026-06-11T21:38:29.076+03:00  INFO 61833 --- [http-nio-8080-exec-7] o.example.diiaclone.service.UserService  : getUserById: looking for user id=4000
-2026-06-11T21:38:29.078+03:00 DEBUG 61833 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:38:29.079+03:00 TRACE 61833 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4000]
-2026-06-11T21:38:29.081+03:00  WARN 61833 --- [http-nio-8080-exec-7] o.e.d.exeption.GlobalExceptionHandler    : User not found: User not found with id: 4000
-2026-06-11T21:41:22.724+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:41:22.731+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 0 documents
-2026-06-11T21:41:43.314+03:00 DEBUG 61833 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:41:43.317+03:00  INFO 61833 --- [http-nio-8080-exec-1] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 0 documents
-2026-06-11T21:42:07.324+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:42:07.330+03:00  INFO 61833 --- [http-nio-8080-exec-5] o.example.diiaclone.service.UserService  : getAllUsers: returned 2 users
-2026-06-11T21:42:09.189+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:42:09.191+03:00  INFO 61833 --- [http-nio-8080-exec-6] o.example.diiaclone.service.UserService  : getAllUsers: returned 2 users
-2026-06-11T21:42:13.897+03:00 DEBUG 61833 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:42:13.901+03:00  INFO 61833 --- [http-nio-8080-exec-7] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 0 documents
-2026-06-11T21:43:42.158+03:00 DEBUG 61833 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:43:42.161+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 0 documents
-2026-06-11T21:45:47.073+03:00 DEBUG 61833 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:45:47.076+03:00  INFO 61833 --- [http-nio-8080-exec-4] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 0 documents
-2026-06-11T21:45:57.526+03:00  WARN 61833 --- [http-nio-8080-exec-6] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {userId=User must be selected}
-2026-06-11T21:46:12.340+03:00  WARN 61833 --- [http-nio-8080-exec-8] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {userId=User must be selected}
-2026-06-11T21:46:18.949+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.e.diiaclone.service.DocumentService    : createDocument: creating document type=pasport for userId=5180
-2026-06-11T21:46:18.951+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:46:18.951+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:46:18.959+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : insert into document (document_number,document_type,user_id) values (?,?,?)
-2026-06-11T21:46:18.960+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [AA567]
-2026-06-11T21:46:18.960+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [pasport]
-2026-06-11T21:46:18.960+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [5180]
-2026-06-11T21:46:18.973+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.e.diiaclone.service.DocumentService    : createDocument: created document id=8
-2026-06-11T21:46:38.736+03:00 DEBUG 61833 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:46:38.740+03:00 DEBUG 61833 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:46:38.741+03:00 TRACE 61833 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:46:38.744+03:00  INFO 61833 --- [http-nio-8080-exec-1] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 1 documents
-2026-06-11T21:47:13.781+03:00  INFO 61833 --- [http-nio-8080-exec-3] o.e.diiaclone.service.DocumentService    : createDocument: creating document type=Driver licenses for userId=5913
-2026-06-11T21:47:13.785+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:13.785+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:47:13.790+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into document (document_number,document_type,user_id) values (?,?,?)
-2026-06-11T21:47:13.791+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [XX759E]
-2026-06-11T21:47:13.791+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Driver licenses]
-2026-06-11T21:47:13.791+03:00 TRACE 61833 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [5913]
-2026-06-11T21:47:13.795+03:00  INFO 61833 --- [http-nio-8080-exec-3] o.e.diiaclone.service.DocumentService    : createDocument: created document id=9
-2026-06-11T21:47:13.812+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:47:13.814+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:13.814+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:47:13.816+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:13.816+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:47:13.818+03:00  INFO 61833 --- [http-nio-8080-exec-5] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 2 documents
-2026-06-11T21:47:22.979+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:47:22.984+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:22.984+03:00 TRACE 61833 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:47:22.987+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:22.987+03:00 TRACE 61833 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:47:22.990+03:00  INFO 61833 --- [http-nio-8080-exec-6] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 2 documents
-2026-06-11T21:47:30.541+03:00  INFO 61833 --- [http-nio-8080-exec-7] o.e.diiaclone.service.DocumentService    : searchByType: searching for type='PASPORT'
-2026-06-11T21:47:30.584+03:00 DEBUG 61833 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0 where upper(d1_0.document_type) like upper(?) escape '\'
-2026-06-11T21:47:30.584+03:00 TRACE 61833 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [%PASPORT%]
-2026-06-11T21:47:30.585+03:00 DEBUG 61833 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:30.585+03:00 TRACE 61833 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:47:30.586+03:00  INFO 61833 --- [http-nio-8080-exec-7] o.e.diiaclone.service.DocumentService    : searchByType: found 1 results for type='PASPORT'
-2026-06-11T21:47:42.912+03:00  INFO 61833 --- [http-nio-8080-exec-8] o.e.diiaclone.service.DocumentService    : searchByType: searching for type='Yehor'
-2026-06-11T21:47:42.919+03:00 DEBUG 61833 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0 where upper(d1_0.document_type) like upper(?) escape '\'
-2026-06-11T21:47:42.920+03:00 TRACE 61833 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [%Yehor%]
-2026-06-11T21:47:42.923+03:00  INFO 61833 --- [http-nio-8080-exec-8] o.e.diiaclone.service.DocumentService    : searchByType: found 0 results for type='Yehor'
-2026-06-11T21:47:43.844+03:00  INFO 61833 --- [http-nio-8080-exec-10] o.e.diiaclone.service.DocumentService    : searchByType: searching for type='Yehor'
-2026-06-11T21:47:43.851+03:00 DEBUG 61833 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0 where upper(d1_0.document_type) like upper(?) escape '\'
-2026-06-11T21:47:43.852+03:00 TRACE 61833 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [%Yehor%]
-2026-06-11T21:47:43.854+03:00  INFO 61833 --- [http-nio-8080-exec-10] o.e.diiaclone.service.DocumentService    : searchByType: found 0 results for type='Yehor'
-2026-06-11T21:47:49.135+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:47:49.138+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:49.139+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:47:49.141+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:47:49.141+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:47:49.144+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 2 documents
-2026-06-11T21:48:41.104+03:00 DEBUG 61833 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:48:41.107+03:00 DEBUG 61833 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:48:41.107+03:00 TRACE 61833 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:48:41.108+03:00 DEBUG 61833 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:48:41.109+03:00 TRACE 61833 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:48:41.111+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 2 documents
-2026-06-11T21:49:24.281+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:49:24.283+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:49:24.283+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:49:24.285+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:49:24.286+03:00 TRACE 61833 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:49:24.287+03:00  INFO 61833 --- [http-nio-8080-exec-5] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 2 documents
-2026-06-11T21:49:31.914+03:00 DEBUG 61833 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:49:31.917+03:00 DEBUG 61833 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:49:31.917+03:00 TRACE 61833 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:49:31.919+03:00 DEBUG 61833 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:49:31.919+03:00 TRACE 61833 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:49:31.921+03:00  INFO 61833 --- [http-nio-8080-exec-4] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 2 documents
-2026-06-11T21:49:45.216+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:49:45.221+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:49:45.222+03:00 TRACE 61833 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:49:45.225+03:00 DEBUG 61833 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:49:45.226+03:00 TRACE 61833 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:49:45.228+03:00  INFO 61833 --- [http-nio-8080-exec-6] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 2 documents
-2026-06-11T21:51:38.906+03:00  INFO 61833 --- [http-nio-8080-exec-8] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=5180
-2026-06-11T21:51:38.914+03:00 DEBUG 61833 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T21:51:38.915+03:00 TRACE 61833 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:51:38.920+03:00 DEBUG 61833 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:51:38.921+03:00 TRACE 61833 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:51:38.924+03:00 DEBUG 61833 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
-2026-06-11T21:51:38.924+03:00 TRACE 61833 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:51:38.936+03:00 DEBUG 61833 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : delete from document where id=?
-2026-06-11T21:51:38.936+03:00 TRACE 61833 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [8]
-2026-06-11T21:51:38.938+03:00 DEBUG 61833 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : delete from users where id=?
-2026-06-11T21:51:38.938+03:00 TRACE 61833 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-11T21:51:38.941+03:00  INFO 61833 --- [http-nio-8080-exec-8] o.example.diiaclone.service.UserService  : deleteUser: deleted user id=5180
-2026-06-11T21:51:38.959+03:00 DEBUG 61833 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:51:38.961+03:00  INFO 61833 --- [http-nio-8080-exec-10] o.example.diiaclone.service.UserService  : getAllUsers: returned 1 users
-2026-06-11T21:51:39.664+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.example.diiaclone.service.UserService  : deleteUser: deleting user id=5913
-2026-06-11T21:51:39.668+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
-2026-06-11T21:51:39.668+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:51:39.673+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-11T21:51:39.673+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:51:39.675+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
-2026-06-11T21:51:39.676+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:51:39.679+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : delete from document where id=?
-2026-06-11T21:51:39.681+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9]
-2026-06-11T21:51:39.682+03:00 DEBUG 61833 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : delete from users where id=?
-2026-06-11T21:51:39.682+03:00 TRACE 61833 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5913]
-2026-06-11T21:51:39.686+03:00  INFO 61833 --- [http-nio-8080-exec-9] o.example.diiaclone.service.UserService  : deleteUser: deleted user id=5913
-2026-06-11T21:51:39.698+03:00 DEBUG 61833 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:51:39.701+03:00  INFO 61833 --- [http-nio-8080-exec-1] o.example.diiaclone.service.UserService  : getAllUsers: returned 0 users
-2026-06-11T21:51:40.853+03:00 DEBUG 61833 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:51:40.856+03:00  INFO 61833 --- [http-nio-8080-exec-2] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 0 documents
-2026-06-11T21:51:40.857+03:00 DEBUG 61833 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-11T21:51:40.862+03:00  INFO 61833 --- [http-nio-8080-exec-3] o.example.diiaclone.service.UserService  : getAllUsers: returned 0 users
-2026-06-11T21:51:43.167+03:00 DEBUG 61833 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
-2026-06-11T21:51:43.169+03:00  INFO 61833 --- [http-nio-8080-exec-5] o.e.diiaclone.service.DocumentService    : getAllDocuments: returned 0 documents
-2026-06-11T21:52:52.680+03:00  INFO 61833 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-11T21:52:52.682+03:00  INFO 61833 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-11T21:52:52.685+03:00  INFO 61833 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-11T21:52:52.687+03:00  INFO 61833 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-11T21:52:52.688+03:00  INFO 61833 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-12T10:53:25.937+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-12T10:53:25.943+03:00 DEBUG 63507 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-12T10:53:25.946+03:00 DEBUG 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 7 ms
+2026-06-12T10:53:25.946+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@54ca1e54],[]>
+2026-06-12T10:53:31.173+03:00  INFO 63507 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getUserById() args=[4166]
+2026-06-12T10:53:31.175+03:00 DEBUG 63507 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-12T10:53:31.175+03:00 TRACE 63507 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
+2026-06-12T10:53:31.177+03:00 DEBUG 63507 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserById() completed in 3 ms
+2026-06-12T10:53:31.177+03:00  INFO 63507 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getUserById() returned=<200 OK OK,org.example.diiaclone.dto.UserResponseDto@6232a4a1,[]>
+2026-06-12T10:53:49.772+03:00  INFO 63507 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-12T10:53:49.774+03:00  INFO 63507 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-12T10:53:49.776+03:00  INFO 63507 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-12T10:53:49.777+03:00  INFO 63507 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-12T10:53:49.778+03:00  INFO 63507 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

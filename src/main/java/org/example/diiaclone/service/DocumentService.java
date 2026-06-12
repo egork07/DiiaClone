@@ -31,41 +31,30 @@ public class DocumentService {
     }
 
     public List<DocumentResponseDto> getAllDocuments() {
-        List<DocumentResponseDto> docs = documentRepository.findAll()
+        return documentRepository.findAll()
                 .stream()
                 .map(DocumentMapper::toDto)
                 .toList();
-
-        log.info("getAllDocuments: returned {} documents", docs.size());
-        return docs;
     }
 
     public DocumentResponseDto getDocumentById(Long id) {
-        log.info("getDocumentById: looking for document id={}", id);
-
         return documentRepository.findById(id)
                 .map(DocumentMapper::toDto)
-                .orElseThrow(() -> new DocumentNotFoundException(id));
+                .orElseThrow(() -> {
+                    log.warn("Document with id={} not found", id);
+                    return new DocumentNotFoundException(id);
+                });
     }
 
     public List<DocumentResponseDto> searchByType(String type) {
-        log.info("searchByType: searching for type='{}'", type);
-
-        List<DocumentResponseDto> results = documentRepository
+        return documentRepository
                 .findByDocumentTypeContainingIgnoreCase(type)
                 .stream()
                 .map(DocumentMapper::toDto)
                 .toList();
-
-        log.info("searchByType: found {} results for type='{}'", results.size(), type);
-        return results;
     }
 
     public DocumentResponseDto createDocument(DocumentCreateDto dto) {
-        log.info("createDocument: creating document type={} for userId={}",
-                dto.getDocumentType(), dto.getUserId());
-
-        // UserNotFoundException бросится здесь, если userId не существует
         User user = userService.getUserEntityById(dto.getUserId());
 
         Document document = new Document();
@@ -73,16 +62,15 @@ public class DocumentService {
         document.setDocumentNumber(dto.getDocumentNumber());
         document.setUser(user);
 
-        DocumentResponseDto saved = DocumentMapper.toDto(documentRepository.save(document));
-        log.info("createDocument: created document id={}", saved.getId());
-        return saved;
+        return DocumentMapper.toDto(documentRepository.save(document));
     }
 
     public DocumentResponseDto updateDocument(Long id, DocumentCreateDto dto) {
-        log.info("updateDocument: updating document id={}", id);
-
         Document document = documentRepository.findById(id)
-                .orElseThrow(() -> new DocumentNotFoundException(id));
+                .orElseThrow(() -> {
+                    log.warn("Update failed — document with id={} not found", id);
+                    return new DocumentNotFoundException(id);
+                });
 
         User user = userService.getUserEntityById(dto.getUserId());
 
@@ -90,19 +78,14 @@ public class DocumentService {
         document.setDocumentNumber(dto.getDocumentNumber());
         document.setUser(user);
 
-        DocumentResponseDto updated = DocumentMapper.toDto(documentRepository.save(document));
-        log.info("updateDocument: updated document id={}", id);
-        return updated;
+        return DocumentMapper.toDto(documentRepository.save(document));
     }
 
     public void deleteDocument(Long id) {
-        log.info("deleteDocument: deleting document id={}", id);
-
         if (!documentRepository.existsById(id)) {
+            log.warn("Delete failed — document with id={} not found", id);
             throw new DocumentNotFoundException(id);
         }
-
         documentRepository.deleteById(id);
-        log.info("deleteDocument: deleted document id={}", id);
     }
 }

@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class UserService {
-
     private static final Logger log = LoggerFactory.getLogger(UserService.class);
 
     private final UserRepository userRepository;
@@ -24,62 +23,52 @@ public class UserService {
     }
 
     public List<UserResponseDto> getAllUsers() {
-        List<UserResponseDto> users = userRepository.findAll()
+        return userRepository.findAll()
                 .stream()
                 .map(UserMapper::toDto)
                 .toList();
-
-        log.info("getAllUsers: returned {} users", users.size());
-        return users;
     }
 
     public UserResponseDto getUserById(Long id) {
-        log.info("getUserById: looking for user id={}", id);
-
         return userRepository.findById(id)
                 .map(UserMapper::toDto)
-                .orElseThrow(() -> new UserNotFoundException(id));
+                .orElseThrow(() -> {
+                    log.warn("User with id={} not found", id);
+                    return new UserNotFoundException(id);
+                });
     }
 
     public UserResponseDto createUser(UserCreateDto dto) {
-        log.info("createUser: creating user with email={}", dto.getEmail());
-        if (userRepository.existsByEmail(dto.getEmail())) {
-            throw new EmailAlreadyExistsException(dto.getEmail());
-        }
         User user = UserMapper.toEntity(dto);
-        UserResponseDto saved = UserMapper.toDto(userRepository.save(user));
-
-        log.info("createUser: created user id={}", saved.getId());
-        return saved;
+        return UserMapper.toDto(userRepository.save(user));
     }
 
     public UserResponseDto updateUser(Long id, UserCreateDto dto) {
-        log.info("updateUser: updating user id={}", id);
-
         User user = userRepository.findById(id)
-                .orElseThrow(() -> new UserNotFoundException(id));
+                .orElseThrow(() -> {
+                    log.warn("Update failed — user with id={} not found", id);
+                    return new UserNotFoundException(id);
+                });
 
         user.setFullName(dto.getFullName());
         user.setEmail(dto.getEmail());
 
-        UserResponseDto updated = UserMapper.toDto(userRepository.save(user));
-        log.info("updateUser: updated user id={}", id);
-        return updated;
+        return UserMapper.toDto(userRepository.save(user));
     }
 
     public void deleteUser(Long id) {
-        log.info("deleteUser: deleting user id={}", id);
-
         if (!userRepository.existsById(id)) {
+            log.warn("Delete failed — user with id={} not found", id);
             throw new UserNotFoundException(id);
         }
-
         userRepository.deleteById(id);
-        log.info("deleteUser: deleted user id={}", id);
     }
 
     public User getUserEntityById(Long id) {
         return userRepository.findById(id)
-                .orElseThrow(() -> new UserNotFoundException(id));
+                .orElseThrow(() -> {
+                    log.warn("getUserEntityById — user with id={} not found", id);
+                    return new UserNotFoundException(id);
+                });
     }
 }
