@@ -1,20 +1,20 @@
-2026-06-12T10:49:48.876+03:00  INFO 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 63507 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
-2026-06-12T10:49:48.878+03:00 DEBUG 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
-2026-06-12T10:49:48.879+03:00  INFO 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
-2026-06-12T10:49:49.161+03:00  INFO 63507 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-12T10:49:49.180+03:00  INFO 63507 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
-2026-06-12T10:49:49.391+03:00  INFO 63507 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-06-12T10:49:49.396+03:00  INFO 63507 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-12T10:49:49.396+03:00  INFO 63507 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-12T10:49:49.411+03:00  INFO 63507 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 516 ms
-2026-06-12T10:49:49.488+03:00  INFO 63507 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-12T10:49:49.511+03:00  INFO 63507 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-12T10:49:49.679+03:00  INFO 63507 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-12T10:49:49.694+03:00  INFO 63507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-12T10:49:49.777+03:00  INFO 63507 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@413eaf5d
-2026-06-12T10:49:49.778+03:00  INFO 63507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-12T10:49:49.799+03:00  WARN 63507 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-06-12T10:49:49.810+03:00  INFO 63507 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-15T12:01:33.821+03:00  INFO 3073 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 3073 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
+2026-06-15T12:01:33.823+03:00 DEBUG 3073 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-15T12:01:33.823+03:00  INFO 3073 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T12:01:34.092+03:00  INFO 3073 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T12:01:34.107+03:00  INFO 3073 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-15T12:01:34.309+03:00  INFO 3073 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-15T12:01:34.314+03:00  INFO 3073 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-15T12:01:34.314+03:00  INFO 3073 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-15T12:01:34.329+03:00  INFO 3073 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 491 ms
+2026-06-15T12:01:34.402+03:00  INFO 3073 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T12:01:34.431+03:00  INFO 3073 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-15T12:01:34.597+03:00  INFO 3073 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T12:01:34.610+03:00  INFO 3073 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T12:01:34.681+03:00  INFO 3073 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30a62a5b
+2026-06-15T12:01:34.682+03:00  INFO 3073 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T12:01:34.701+03:00  WARN 3073 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15T12:01:34.713+03:00  INFO 3073 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
 	Database driver: PostgreSQL JDBC Driver
 	Database dialect: PostgreSQLDialect
@@ -26,27 +26,120 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-12T10:49:50.175+03:00  INFO 63507 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-12T10:49:50.234+03:00  INFO 63507 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-12T10:49:50.305+03:00  INFO 63507 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-12T10:49:50.478+03:00  WARN 63507 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-12T10:49:50.490+03:00  INFO 63507 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
-2026-06-12T10:49:50.705+03:00  INFO 63507 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-06-12T10:49:50.709+03:00  INFO 63507 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 2.018 seconds (process running for 2.37)
-2026-06-12T10:50:08.252+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-12T10:50:08.252+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-12T10:50:08.254+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-06-12T10:50:08.319+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] DocumentController.createDocument() args=[org.example.diiaclone.dto.DocumentCreateDto@3a18f044]
-2026-06-12T10:50:08.334+03:00 DEBUG 63507 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-12T10:50:08.335+03:00 TRACE 63507 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5180]
-2026-06-12T10:50:08.349+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.example.diiaclone.service.UserService  : getUserEntityById — user with id=5180 not found
-2026-06-12T10:50:08.349+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserEntityById() failed after 29 ms — User not found with id: 5180
-2026-06-12T10:50:08.350+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] DocumentService.createDocument() failed after 30 ms — User not found with id: 5180
-2026-06-12T10:50:08.350+03:00 ERROR 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [EXCEPTION] DocumentController.createDocument() threw UserNotFoundException: User not found with id: 5180
-2026-06-12T10:50:08.351+03:00  WARN 63507 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : User not found: User not found with id: 5180
-2026-06-12T10:50:21.908+03:00 ERROR 63507 --- [http-nio-8080-exec-3] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+2026-06-15T12:01:35.058+03:00  INFO 3073 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T12:01:35.107+03:00  INFO 3073 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:01:35.177+03:00  INFO 3073 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-15T12:01:35.336+03:00  WARN 3073 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T12:01:35.350+03:00  INFO 3073 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T12:01:35.548+03:00  INFO 3073 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-15T12:01:35.552+03:00  INFO 3073 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.893 seconds (process running for 2.188)
+2026-06-15T12:02:06.670+03:00  INFO 3073 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15T12:02:06.671+03:00  INFO 3073 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-15T12:02:06.672+03:00  INFO 3073 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-15T12:02:06.688+03:00 ERROR 3073 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
 
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api for request '/api'.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource documents/new for request '/documents/new'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:02:19.033+03:00  INFO 3073 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:02:19.122+03:00 DEBUG 3073 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:02:19.153+03:00 DEBUG 3073 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 119 ms
+2026-06-15T12:02:19.158+03:00  INFO 3073 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@b4284d2],[]>
+2026-06-15T12:02:22.087+03:00  INFO 3073 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.deleteUser() args=[4166]
+2026-06-15T12:02:22.230+03:00 DEBUG 3073 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
+2026-06-15T12:02:22.230+03:00 TRACE 3073 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
+2026-06-15T12:02:22.235+03:00 DEBUG 3073 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:02:22.235+03:00 TRACE 3073 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
+2026-06-15T12:02:22.238+03:00 DEBUG 3073 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
+2026-06-15T12:02:22.238+03:00 TRACE 3073 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
+2026-06-15T12:02:22.246+03:00 DEBUG 3073 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : delete from users where id=?
+2026-06-15T12:02:22.246+03:00 TRACE 3073 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
+2026-06-15T12:02:22.250+03:00 DEBUG 3073 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.deleteUser() completed in 162 ms
+2026-06-15T12:02:22.250+03:00  INFO 3073 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.deleteUser() returned=<204 NO_CONTENT No Content,[]>
+2026-06-15T12:02:22.255+03:00  INFO 3073 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:02:22.256+03:00 DEBUG 3073 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:02:22.256+03:00 DEBUG 3073 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 1 ms
+2026-06-15T12:02:22.256+03:00  INFO 3073 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
+2026-06-15T12:03:48.749+03:00 ERROR 3073 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users for request '/users'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:04:06.924+03:00 ERROR 3073 --- [http-nio-8080-exec-3] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users for request '/users'.
 	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
@@ -85,34 +178,457 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
 	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
 
-2026-06-12T10:50:34.619+03:00  INFO 63507 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
-2026-06-12T10:50:34.754+03:00 DEBUG 63507 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-12T10:50:34.756+03:00 DEBUG 63507 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 137 ms
-2026-06-12T10:50:34.756+03:00  INFO 63507 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
-2026-06-12T10:51:19.482+03:00  INFO 63507 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
-2026-06-12T10:51:19.485+03:00 DEBUG 63507 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-12T10:51:19.486+03:00 DEBUG 63507 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 4 ms
-2026-06-12T10:51:19.487+03:00  INFO 63507 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
-2026-06-12T10:51:24.460+03:00  INFO 63507 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@3bda799e]
-2026-06-12T10:51:24.478+03:00 DEBUG 63507 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
-2026-06-12T10:51:24.479+03:00 TRACE 63507 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@test.com]
-2026-06-12T10:51:24.479+03:00 TRACE 63507 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Yehor]
-2026-06-12T10:51:24.479+03:00 TRACE 63507 --- [http-nio-8080-exec-7] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [4166]
-2026-06-12T10:51:24.481+03:00 DEBUG 63507 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 20 ms
-2026-06-12T10:51:24.481+03:00  INFO 63507 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@2479ebe5,[]>
-2026-06-12T10:51:32.633+03:00  INFO 63507 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getUserById() args=[4166]
-2026-06-12T10:51:32.635+03:00 DEBUG 63507 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-12T10:51:32.636+03:00 TRACE 63507 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
-2026-06-12T10:51:32.651+03:00 DEBUG 63507 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserById() completed in 17 ms
-2026-06-12T10:51:32.651+03:00  INFO 63507 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getUserById() returned=<200 OK OK,org.example.diiaclone.dto.UserResponseDto@4f649902,[]>
-2026-06-12T10:51:57.141+03:00  INFO 63507 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getUserById() args=[4167]
-2026-06-12T10:51:57.142+03:00 DEBUG 63507 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-12T10:51:57.142+03:00 TRACE 63507 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4167]
-2026-06-12T10:51:57.143+03:00  WARN 63507 --- [http-nio-8080-exec-9] o.example.diiaclone.service.UserService  : User with id=4167 not found
-2026-06-12T10:51:57.144+03:00  WARN 63507 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserById() failed after 3 ms — User not found with id: 4167
-2026-06-12T10:51:57.144+03:00 ERROR 63507 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [EXCEPTION] UserController.getUserById() threw UserNotFoundException: User not found with id: 4167
-2026-06-12T10:51:57.146+03:00  WARN 63507 --- [http-nio-8080-exec-9] o.e.d.exeption.GlobalExceptionHandler    : User not found: User not found with id: 4167
-2026-06-12T10:52:35.745+03:00 ERROR 63507 --- [http-nio-8080-exec-10] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+2026-06-15T12:04:59.590+03:00 ERROR 3073 --- [http-nio-8080-exec-5] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users for request '/users'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:05:43.958+03:00  INFO 3073 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@31eff9a5]
+2026-06-15T12:05:43.963+03:00 DEBUG 3073 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
+2026-06-15T12:05:43.963+03:00 TRACE 3073 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@gmail.com]
+2026-06-15T12:05:43.963+03:00 TRACE 3073 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Yehor Kyrylin]
+2026-06-15T12:05:43.963+03:00 TRACE 3073 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [2487]
+2026-06-15T12:05:43.966+03:00 DEBUG 3073 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 7 ms
+2026-06-15T12:05:43.966+03:00  INFO 3073 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@7ade3ff1,[]>
+2026-06-15T12:05:43.972+03:00  INFO 3073 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:05:43.973+03:00 DEBUG 3073 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:05:43.974+03:00 DEBUG 3073 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 2 ms
+2026-06-15T12:05:43.974+03:00  INFO 3073 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@732f0d9d],[]>
+2026-06-15T12:05:51.399+03:00 ERROR 3073 --- [http-nio-8080-exec-9] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users for request '/users'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:06:06.645+03:00 ERROR 3073 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource user for request '/user'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:06:08.713+03:00 ERROR 3073 --- [http-nio-8080-exec-3] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users for request '/users'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:06:40.123+03:00 ERROR 3073 --- [http-nio-8080-exec-6] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource documents for request '/documents'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:07:05.292+03:00  INFO 3073 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-15T12:07:05.297+03:00  INFO 3073 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-15T12:07:05.299+03:00  INFO 3073 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:07:05.300+03:00  INFO 3073 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-15T12:07:05.301+03:00  INFO 3073 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-15T12:07:14.673+03:00  INFO 3212 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 3212 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
+2026-06-15T12:07:14.674+03:00 DEBUG 3212 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-15T12:07:14.674+03:00  INFO 3212 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T12:07:14.924+03:00  INFO 3212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T12:07:14.939+03:00  INFO 3212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-15T12:07:15.128+03:00  INFO 3212 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-15T12:07:15.133+03:00  INFO 3212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-15T12:07:15.133+03:00  INFO 3212 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-15T12:07:15.147+03:00  INFO 3212 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 459 ms
+2026-06-15T12:07:15.217+03:00  INFO 3212 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T12:07:15.234+03:00  INFO 3212 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-15T12:07:15.374+03:00  INFO 3212 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T12:07:15.386+03:00  INFO 3212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T12:07:15.568+03:00  INFO 3212 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ca10069
+2026-06-15T12:07:15.570+03:00  INFO 3212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T12:07:15.832+03:00  WARN 3212 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15T12:07:15.852+03:00  INFO 3212 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: diiaDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T12:07:16.445+03:00  INFO 3212 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T12:07:16.673+03:00  INFO 3212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:07:16.752+03:00  INFO 3212 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-15T12:07:16.912+03:00  WARN 3212 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T12:07:16.927+03:00  INFO 3212 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T12:07:17.117+03:00  INFO 3212 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-15T12:07:17.121+03:00  INFO 3212 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 2.597 seconds (process running for 2.862)
+2026-06-15T12:07:29.080+03:00  INFO 3212 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15T12:07:29.080+03:00  INFO 3212 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-15T12:07:29.081+03:00  INFO 3212 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-15T12:07:29.093+03:00 ERROR 3212 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users for request '/users'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:07:46.465+03:00 ERROR 3212 --- [http-nio-8080-exec-4] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource user for request '/user'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:07:50.115+03:00 ERROR 3212 --- [http-nio-8080-exec-6] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users for request '/users/'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T12:07:56.751+03:00  INFO 3212 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:07:56.831+03:00 DEBUG 3212 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:07:56.845+03:00 DEBUG 3212 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 94 ms
+2026-06-15T12:07:56.846+03:00  INFO 3212 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@57bf9e03],[]>
+2026-06-15T12:11:18.919+03:00  WARN 3212 --- [http-nio-8080-exec-2] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required}
+2026-06-15T12:11:32.368+03:00  WARN 3212 --- [http-nio-8080-exec-3] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required}
+2026-06-15T12:11:40.235+03:00  WARN 3212 --- [http-nio-8080-exec-5] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required}
+2026-06-15T12:11:45.130+03:00  WARN 3212 --- [http-nio-8080-exec-7] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required}
+2026-06-15T12:11:58.700+03:00  WARN 3212 --- [http-nio-8080-exec-9] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required}
+2026-06-15T12:12:11.525+03:00  WARN 3212 --- [http-nio-8080-exec-2] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required}
+2026-06-15T12:12:38.811+03:00  INFO 3212 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-15T12:12:38.815+03:00  INFO 3212 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-15T12:12:38.818+03:00  INFO 3212 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:12:38.819+03:00  INFO 3212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-15T12:12:38.820+03:00  INFO 3212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-15T12:13:49.524+03:00  INFO 3322 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 3322 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
+2026-06-15T12:13:49.525+03:00 DEBUG 3322 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-15T12:13:49.525+03:00  INFO 3322 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T12:13:49.790+03:00  INFO 3322 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T12:13:49.806+03:00  INFO 3322 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-15T12:13:50.004+03:00  INFO 3322 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-15T12:13:50.010+03:00  INFO 3322 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-15T12:13:50.010+03:00  INFO 3322 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-15T12:13:50.027+03:00  INFO 3322 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 488 ms
+2026-06-15T12:13:50.095+03:00  INFO 3322 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T12:13:50.119+03:00  INFO 3322 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-15T12:13:50.281+03:00  INFO 3322 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T12:13:50.294+03:00  INFO 3322 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T12:13:50.348+03:00  INFO 3322 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18692e80
+2026-06-15T12:13:50.349+03:00  INFO 3322 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T12:13:50.362+03:00  WARN 3322 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15T12:13:50.370+03:00  INFO 3322 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: diiaDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T12:13:50.695+03:00  INFO 3322 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T12:13:50.744+03:00  INFO 3322 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:13:50.816+03:00  INFO 3322 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-15T12:13:50.973+03:00  WARN 3322 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T12:13:50.986+03:00  INFO 3322 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T12:13:51.173+03:00  INFO 3322 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-15T12:13:51.176+03:00  INFO 3322 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.803 seconds (process running for 2.103)
+2026-06-15T12:13:54.161+03:00  INFO 3322 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15T12:13:54.161+03:00  INFO 3322 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-15T12:13:54.162+03:00  INFO 3322 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-15T12:13:54.178+03:00  INFO 3322 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:13:54.241+03:00 DEBUG 3322 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:13:54.254+03:00 DEBUG 3322 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 75 ms
+2026-06-15T12:13:54.256+03:00  INFO 3322 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@59ebe5c7],[]>
+2026-06-15T12:14:04.665+03:00  INFO 3322 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.deleteUser() args=[2487]
+2026-06-15T12:14:04.807+03:00 DEBUG 3322 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
+2026-06-15T12:14:04.808+03:00 TRACE 3322 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2487]
+2026-06-15T12:14:04.812+03:00 DEBUG 3322 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:14:04.812+03:00 TRACE 3322 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2487]
+2026-06-15T12:14:04.816+03:00 DEBUG 3322 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
+2026-06-15T12:14:04.816+03:00 TRACE 3322 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2487]
+2026-06-15T12:14:04.823+03:00 DEBUG 3322 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from users where id=?
+2026-06-15T12:14:04.823+03:00 TRACE 3322 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [2487]
+2026-06-15T12:14:04.826+03:00 DEBUG 3322 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.deleteUser() completed in 160 ms
+2026-06-15T12:14:04.826+03:00  INFO 3322 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.deleteUser() returned=<204 NO_CONTENT No Content,[]>
+2026-06-15T12:14:09.965+03:00 ERROR 3322 --- [http-nio-8080-exec-4] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
 
 org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
 	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:260) ~[spring-webmvc-7.0.7.jar:7.0.7]
@@ -158,17 +674,400 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
 	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
 
-2026-06-12T10:53:25.937+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
-2026-06-12T10:53:25.943+03:00 DEBUG 63507 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
-2026-06-12T10:53:25.946+03:00 DEBUG 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 7 ms
-2026-06-12T10:53:25.946+03:00  INFO 63507 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@54ca1e54],[]>
-2026-06-12T10:53:31.173+03:00  INFO 63507 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getUserById() args=[4166]
-2026-06-12T10:53:31.175+03:00 DEBUG 63507 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
-2026-06-12T10:53:31.175+03:00 TRACE 63507 --- [http-nio-8080-exec-3] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4166]
-2026-06-12T10:53:31.177+03:00 DEBUG 63507 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserById() completed in 3 ms
-2026-06-12T10:53:31.177+03:00  INFO 63507 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getUserById() returned=<200 OK OK,org.example.diiaclone.dto.UserResponseDto@6232a4a1,[]>
-2026-06-12T10:53:49.772+03:00  INFO 63507 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-12T10:53:49.774+03:00  INFO 63507 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-12T10:53:49.776+03:00  INFO 63507 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-12T10:53:49.777+03:00  INFO 63507 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-12T10:53:49.778+03:00  INFO 63507 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-15T12:14:15.925+03:00  WARN 3322 --- [http-nio-8080-exec-6] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required}
+2026-06-15T12:15:33.751+03:00  INFO 3322 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@2777380e]
+2026-06-15T12:15:33.762+03:00 DEBUG 3322 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
+2026-06-15T12:15:33.763+03:00 TRACE 3322 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [andr@gmail.com]
+2026-06-15T12:15:33.763+03:00 TRACE 3322 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Andrii]
+2026-06-15T12:15:33.763+03:00 TRACE 3322 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [5233]
+2026-06-15T12:15:33.765+03:00 DEBUG 3322 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 13 ms
+2026-06-15T12:15:33.765+03:00  INFO 3322 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@e160d5a,[]>
+2026-06-15T12:15:43.718+03:00  INFO 3322 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@6a711567]
+2026-06-15T12:15:43.720+03:00 DEBUG 3322 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
+2026-06-15T12:15:43.721+03:00 TRACE 3322 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yehor@gmail.com]
+2026-06-15T12:15:43.721+03:00 TRACE 3322 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Yehor]
+2026-06-15T12:15:43.721+03:00 TRACE 3322 --- [http-nio-8080-exec-9] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [4972]
+2026-06-15T12:15:43.724+03:00 DEBUG 3322 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 5 ms
+2026-06-15T12:15:43.724+03:00  INFO 3322 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@60897e17,[]>
+2026-06-15T12:15:55.004+03:00  INFO 3322 --- [http-nio-8080-exec-10] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@73546795]
+2026-06-15T12:15:55.006+03:00 DEBUG 3322 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
+2026-06-15T12:15:55.007+03:00 TRACE 3322 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [maria@gmail.com]
+2026-06-15T12:15:55.007+03:00 TRACE 3322 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Mariia]
+2026-06-15T12:15:55.007+03:00 TRACE 3322 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [9264]
+2026-06-15T12:15:55.009+03:00 DEBUG 3322 --- [http-nio-8080-exec-10] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 4 ms
+2026-06-15T12:15:55.009+03:00  INFO 3322 --- [http-nio-8080-exec-10] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@79ac0ce5,[]>
+2026-06-15T12:15:58.796+03:00  INFO 3322 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:15:58.799+03:00 DEBUG 3322 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:15:58.802+03:00 DEBUG 3322 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 5 ms
+2026-06-15T12:15:58.802+03:00  INFO 3322 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@38854f72, org.example.diiaclone.dto.UserResponseDto@48efa276, org.example.diiaclone.dto.UserResponseDto@6d568c0d],[]>
+2026-06-15T12:16:04.609+03:00  INFO 3322 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:16:04.613+03:00 DEBUG 3322 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:16:04.617+03:00 DEBUG 3322 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 7 ms
+2026-06-15T12:16:04.617+03:00  INFO 3322 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@2039e4eb, org.example.diiaclone.dto.UserResponseDto@932e74f, org.example.diiaclone.dto.UserResponseDto@ecaf646],[]>
+2026-06-15T12:16:07.337+03:00  INFO 3322 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] DocumentController.getAllDocuments() args=[]
+2026-06-15T12:16:07.341+03:00 DEBUG 3322 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
+2026-06-15T12:16:07.349+03:00 DEBUG 3322 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] DocumentService.getAllDocuments() completed in 12 ms
+2026-06-15T12:16:07.349+03:00  INFO 3322 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] DocumentController.getAllDocuments() returned=<200 OK OK,[],[]>
+2026-06-15T12:20:20.015+03:00  INFO 3322 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:20:20.025+03:00 DEBUG 3322 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:20:20.029+03:00 DEBUG 3322 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 12 ms
+2026-06-15T12:20:20.029+03:00  INFO 3322 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@2e9adeb, org.example.diiaclone.dto.UserResponseDto@39e46866, org.example.diiaclone.dto.UserResponseDto@7e10c826],[]>
+2026-06-15T12:24:56.503+03:00  INFO 3322 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-15T12:24:56.509+03:00  INFO 3322 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-15T12:24:56.512+03:00  INFO 3322 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:24:56.514+03:00  INFO 3322 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-15T12:24:56.516+03:00  INFO 3322 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-15T12:24:59.315+03:00  INFO 3577 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 3577 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
+2026-06-15T12:24:59.316+03:00 DEBUG 3577 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-15T12:24:59.316+03:00  INFO 3577 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T12:24:59.567+03:00  INFO 3577 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T12:24:59.585+03:00  INFO 3577 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2026-06-15T12:24:59.773+03:00  INFO 3577 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-15T12:24:59.779+03:00  INFO 3577 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-15T12:24:59.779+03:00  INFO 3577 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-15T12:24:59.794+03:00  INFO 3577 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 463 ms
+2026-06-15T12:24:59.863+03:00  INFO 3577 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T12:24:59.881+03:00  INFO 3577 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-15T12:25:00.022+03:00  INFO 3577 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T12:25:00.035+03:00  INFO 3577 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T12:25:00.091+03:00  INFO 3577 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@653e7b
+2026-06-15T12:25:00.091+03:00  INFO 3577 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T12:25:00.103+03:00  WARN 3577 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15T12:25:00.112+03:00  INFO 3577 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: diiaDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T12:25:00.424+03:00  INFO 3577 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T12:25:00.473+03:00  INFO 3577 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:25:00.543+03:00  INFO 3577 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-15T12:25:00.702+03:00  WARN 3577 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T12:25:00.716+03:00  INFO 3577 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T12:25:00.914+03:00  INFO 3577 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-15T12:25:00.917+03:00  INFO 3577 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.749 seconds (process running for 2.006)
+2026-06-15T12:26:45.102+03:00  INFO 3577 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15T12:26:45.103+03:00  INFO 3577 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-15T12:26:45.109+03:00  INFO 3577 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-06-15T12:26:45.131+03:00  INFO 3577 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:26:45.195+03:00 DEBUG 3577 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:26:45.212+03:00 DEBUG 3577 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 81 ms
+2026-06-15T12:26:45.215+03:00  INFO 3577 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@277d1f22, org.example.diiaclone.dto.UserResponseDto@33232e49, org.example.diiaclone.dto.UserResponseDto@2420fab9],[]>
+2026-06-15T12:26:50.835+03:00  INFO 3577 --- [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 124 ms
+2026-06-15T12:45:11.122+03:00  INFO 3577 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-15T12:45:11.128+03:00  INFO 3577 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-15T12:45:11.134+03:00  INFO 3577 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:45:11.137+03:00  INFO 3577 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-15T12:45:11.138+03:00  INFO 3577 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-15T12:47:59.836+03:00  INFO 3952 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 3952 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
+2026-06-15T12:47:59.837+03:00 DEBUG 3952 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-15T12:47:59.838+03:00  INFO 3952 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T12:48:00.151+03:00  INFO 3952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T12:48:00.168+03:00  INFO 3952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2026-06-15T12:48:00.404+03:00  INFO 3952 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-15T12:48:00.410+03:00  INFO 3952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-15T12:48:00.411+03:00  INFO 3952 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-15T12:48:00.430+03:00  INFO 3952 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 576 ms
+2026-06-15T12:48:00.519+03:00  INFO 3952 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T12:48:00.548+03:00  INFO 3952 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-15T12:48:00.729+03:00  INFO 3952 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T12:48:00.747+03:00  INFO 3952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T12:48:00.811+03:00  INFO 3952 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ca10069
+2026-06-15T12:48:00.811+03:00  INFO 3952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T12:48:00.825+03:00  WARN 3952 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15T12:48:00.838+03:00  INFO 3952 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: diiaDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T12:48:01.222+03:00  INFO 3952 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T12:48:01.269+03:00  INFO 3952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T12:48:01.339+03:00  INFO 3952 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-15T12:48:01.519+03:00  WARN 3952 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T12:48:01.534+03:00  INFO 3952 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T12:48:01.765+03:00  INFO 3952 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-15T12:48:01.768+03:00  INFO 3952 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 2.122 seconds (process running for 2.448)
+2026-06-15T12:48:12.162+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15T12:48:12.163+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-15T12:48:12.164+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-15T12:48:12.179+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:48:12.256+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:48:12.277+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 97 ms
+2026-06-15T12:48:12.279+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@6af30676, org.example.diiaclone.dto.UserResponseDto@43f4d357, org.example.diiaclone.dto.UserResponseDto@582a14ce],[]>
+2026-06-15T12:48:15.272+03:00  INFO 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.deleteUser() args=[5233]
+2026-06-15T12:48:15.421+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
+2026-06-15T12:48:15.422+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5233]
+2026-06-15T12:48:15.427+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:48:15.428+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5233]
+2026-06-15T12:48:15.434+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
+2026-06-15T12:48:15.434+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5233]
+2026-06-15T12:48:15.446+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : delete from users where id=?
+2026-06-15T12:48:15.446+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [5233]
+2026-06-15T12:48:15.451+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.deleteUser() completed in 178 ms
+2026-06-15T12:48:15.452+03:00  INFO 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.deleteUser() returned=<204 NO_CONTENT No Content,[]>
+2026-06-15T12:48:15.459+03:00  INFO 3952 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:48:15.460+03:00 DEBUG 3952 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:48:15.461+03:00 DEBUG 3952 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 2 ms
+2026-06-15T12:48:15.461+03:00  INFO 3952 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@f116090, org.example.diiaclone.dto.UserResponseDto@4afca424],[]>
+2026-06-15T12:48:15.907+03:00  INFO 3952 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.deleteUser() args=[4972]
+2026-06-15T12:48:15.910+03:00 DEBUG 3952 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
+2026-06-15T12:48:15.911+03:00 TRACE 3952 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4972]
+2026-06-15T12:48:15.914+03:00 DEBUG 3952 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:48:15.915+03:00 TRACE 3952 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4972]
+2026-06-15T12:48:15.917+03:00 DEBUG 3952 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
+2026-06-15T12:48:15.917+03:00 TRACE 3952 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4972]
+2026-06-15T12:48:15.919+03:00 DEBUG 3952 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : delete from users where id=?
+2026-06-15T12:48:15.919+03:00 TRACE 3952 --- [http-nio-8080-exec-4] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [4972]
+2026-06-15T12:48:15.921+03:00 DEBUG 3952 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.deleteUser() completed in 14 ms
+2026-06-15T12:48:15.922+03:00  INFO 3952 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.deleteUser() returned=<204 NO_CONTENT No Content,[]>
+2026-06-15T12:48:15.927+03:00  INFO 3952 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:48:15.929+03:00 DEBUG 3952 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:48:15.931+03:00 DEBUG 3952 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 4 ms
+2026-06-15T12:48:15.932+03:00  INFO 3952 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@6ffffc22],[]>
+2026-06-15T12:48:16.363+03:00  INFO 3952 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.deleteUser() args=[9264]
+2026-06-15T12:48:16.365+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
+2026-06-15T12:48:16.365+03:00 TRACE 3952 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9264]
+2026-06-15T12:48:16.367+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:48:16.368+03:00 TRACE 3952 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9264]
+2026-06-15T12:48:16.370+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
+2026-06-15T12:48:16.370+03:00 TRACE 3952 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9264]
+2026-06-15T12:48:16.372+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : delete from users where id=?
+2026-06-15T12:48:16.372+03:00 TRACE 3952 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9264]
+2026-06-15T12:48:16.374+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.deleteUser() completed in 11 ms
+2026-06-15T12:48:16.374+03:00  INFO 3952 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.deleteUser() returned=<204 NO_CONTENT No Content,[]>
+2026-06-15T12:48:16.383+03:00  INFO 3952 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:48:16.385+03:00 DEBUG 3952 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:48:16.387+03:00 DEBUG 3952 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 4 ms
+2026-06-15T12:48:16.388+03:00  INFO 3952 --- [http-nio-8080-exec-7] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
+2026-06-15T12:48:35.772+03:00  INFO 3952 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@5367026a]
+2026-06-15T12:48:35.796+03:00 DEBUG 3952 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+2026-06-15T12:48:35.796+03:00 TRACE 3952 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@gmail.com]
+2026-06-15T12:48:35.796+03:00 TRACE 3952 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
+2026-06-15T12:48:35.802+03:00 DEBUG 3952 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
+2026-06-15T12:48:35.802+03:00 TRACE 3952 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@gmail.com]
+2026-06-15T12:48:35.802+03:00 TRACE 3952 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Yehor]
+2026-06-15T12:48:35.802+03:00 TRACE 3952 --- [http-nio-8080-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [9417]
+2026-06-15T12:48:35.804+03:00 DEBUG 3952 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 32 ms
+2026-06-15T12:48:35.804+03:00  INFO 3952 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@3906836e,[]>
+2026-06-15T12:48:35.815+03:00  INFO 3952 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:48:35.816+03:00 DEBUG 3952 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:48:35.817+03:00 DEBUG 3952 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 1 ms
+2026-06-15T12:48:35.817+03:00  INFO 3952 --- [http-nio-8080-exec-9] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@7807e10d],[]>
+2026-06-15T12:48:54.408+03:00  INFO 3952 --- [http-nio-8080-exec-10] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.deleteUser() args=[9417]
+2026-06-15T12:48:54.410+03:00 DEBUG 3952 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
+2026-06-15T12:48:54.410+03:00 TRACE 3952 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9417]
+2026-06-15T12:48:54.411+03:00 DEBUG 3952 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:48:54.411+03:00 TRACE 3952 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9417]
+2026-06-15T12:48:54.412+03:00 DEBUG 3952 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
+2026-06-15T12:48:54.412+03:00 TRACE 3952 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9417]
+2026-06-15T12:48:54.413+03:00 DEBUG 3952 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : delete from users where id=?
+2026-06-15T12:48:54.413+03:00 TRACE 3952 --- [http-nio-8080-exec-10] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [9417]
+2026-06-15T12:48:54.414+03:00 DEBUG 3952 --- [http-nio-8080-exec-10] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.deleteUser() completed in 5 ms
+2026-06-15T12:48:54.414+03:00  INFO 3952 --- [http-nio-8080-exec-10] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.deleteUser() returned=<204 NO_CONTENT No Content,[]>
+2026-06-15T12:48:54.419+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:48:54.419+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:48:54.420+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 1 ms
+2026-06-15T12:48:54.420+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
+2026-06-15T12:49:21.233+03:00  INFO 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.createUser() args=[org.example.diiaclone.dto.UserCreateDto@5d7c2fd7]
+2026-06-15T12:49:21.239+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+2026-06-15T12:49:21.240+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@gmail.com]
+2026-06-15T12:49:21.240+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:INTEGER) <- [1]
+2026-06-15T12:49:21.242+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into users (email,full_name,id) values (?,?,?)
+2026-06-15T12:49:21.243+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [yeh@gmail.com]
+2026-06-15T12:49:21.243+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [yehor]
+2026-06-15T12:49:21.243+03:00 TRACE 3952 --- [http-nio-8080-exec-2] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [7104]
+2026-06-15T12:49:21.245+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.createUser() completed in 10 ms
+2026-06-15T12:49:21.246+03:00  INFO 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.createUser() returned=<201 CREATED Created,org.example.diiaclone.dto.UserResponseDto@32803a05,[]>
+2026-06-15T12:49:21.254+03:00  INFO 3952 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:49:21.257+03:00 DEBUG 3952 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:49:21.260+03:00 DEBUG 3952 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 6 ms
+2026-06-15T12:49:21.261+03:00  INFO 3952 --- [http-nio-8080-exec-3] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@76746fcf],[]>
+2026-06-15T12:49:22.243+03:00  INFO 3952 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] DocumentController.getAllDocuments() args=[]
+2026-06-15T12:49:22.247+03:00 DEBUG 3952 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
+2026-06-15T12:49:22.251+03:00 DEBUG 3952 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] DocumentService.getAllDocuments() completed in 7 ms
+2026-06-15T12:49:22.251+03:00  INFO 3952 --- [http-nio-8080-exec-4] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] DocumentController.getAllDocuments() returned=<200 OK OK,[],[]>
+2026-06-15T12:49:44.299+03:00  INFO 3952 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] DocumentController.createDocument() args=[org.example.diiaclone.dto.DocumentCreateDto@1758dff3]
+2026-06-15T12:49:44.301+03:00 DEBUG 3952 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:49:44.302+03:00 TRACE 3952 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [7104]
+2026-06-15T12:49:44.304+03:00 DEBUG 3952 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getUserEntityById() completed in 4 ms
+2026-06-15T12:49:44.306+03:00 DEBUG 3952 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into document (document_number,document_type,user_id) values (?,?,?)
+2026-06-15T12:49:44.307+03:00 TRACE 3952 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [pj8989]
+2026-06-15T12:49:44.307+03:00 TRACE 3952 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [pasport]
+2026-06-15T12:49:44.307+03:00 TRACE 3952 --- [http-nio-8080-exec-5] org.hibernate.orm.jdbc.bind              : binding parameter (3:BIGINT) <- [7104]
+2026-06-15T12:49:44.316+03:00 DEBUG 3952 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] DocumentService.createDocument() completed in 16 ms
+2026-06-15T12:49:44.317+03:00  INFO 3952 --- [http-nio-8080-exec-5] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] DocumentController.createDocument() returned=<201 CREATED Created,org.example.diiaclone.dto.DocumentResponseDto@30df2fce,[]>
+2026-06-15T12:49:44.326+03:00  INFO 3952 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] DocumentController.getAllDocuments() args=[]
+2026-06-15T12:49:44.327+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select d1_0.id,d1_0.document_number,d1_0.document_type,d1_0.user_id from document d1_0
+2026-06-15T12:49:44.328+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:49:44.328+03:00 TRACE 3952 --- [http-nio-8080-exec-6] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [7104]
+2026-06-15T12:49:44.329+03:00 DEBUG 3952 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] DocumentService.getAllDocuments() completed in 3 ms
+2026-06-15T12:49:44.330+03:00  INFO 3952 --- [http-nio-8080-exec-6] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] DocumentController.getAllDocuments() returned=<200 OK OK,[org.example.diiaclone.dto.DocumentResponseDto@7466afb9],[]>
+2026-06-15T12:49:50.891+03:00  INFO 3952 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:49:50.896+03:00 DEBUG 3952 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:49:50.898+03:00 DEBUG 3952 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 6 ms
+2026-06-15T12:49:50.898+03:00  INFO 3952 --- [http-nio-8080-exec-8] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[org.example.diiaclone.dto.UserResponseDto@379dc327],[]>
+2026-06-15T12:55:03.929+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.deleteUser() args=[7104]
+2026-06-15T12:55:03.935+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select count(*) from users u1_0 where u1_0.id=?
+2026-06-15T12:55:03.935+03:00 TRACE 3952 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [7104]
+2026-06-15T12:55:03.938+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0 where u1_0.id=?
+2026-06-15T12:55:03.938+03:00 TRACE 3952 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [7104]
+2026-06-15T12:55:03.940+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select d1_0.user_id,d1_0.id,d1_0.document_number,d1_0.document_type from document d1_0 where d1_0.user_id=?
+2026-06-15T12:55:03.940+03:00 TRACE 3952 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [7104]
+2026-06-15T12:55:03.949+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from document where id=?
+2026-06-15T12:55:03.950+03:00 TRACE 3952 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [10]
+2026-06-15T12:55:03.951+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from users where id=?
+2026-06-15T12:55:03.951+03:00 TRACE 3952 --- [http-nio-8080-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:BIGINT) <- [7104]
+2026-06-15T12:55:03.953+03:00 DEBUG 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.deleteUser() completed in 21 ms
+2026-06-15T12:55:03.953+03:00  INFO 3952 --- [http-nio-8080-exec-1] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.deleteUser() returned=<204 NO_CONTENT No Content,[]>
+2026-06-15T12:55:03.961+03:00  INFO 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [REQUEST] UserController.getAllUsers() args=[]
+2026-06-15T12:55:03.964+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id,u1_0.email,u1_0.full_name from users u1_0
+2026-06-15T12:55:03.965+03:00 DEBUG 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [SERVICE] UserService.getAllUsers() completed in 4 ms
+2026-06-15T12:55:03.965+03:00  INFO 3952 --- [http-nio-8080-exec-2] o.e.diiaclone.aspect.LoggingAspect       : [RESPONSE] UserController.getAllUsers() returned=<200 OK OK,[],[]>
+2026-06-15T12:55:12.003+03:00  WARN 3952 --- [http-nio-8080-exec-3] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required, email=Email is required}
+2026-06-15T12:55:18.496+03:00  WARN 3952 --- [http-nio-8080-exec-4] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required, email=Email is required}
+2026-06-15T12:55:26.921+03:00  WARN 3952 --- [http-nio-8080-exec-5] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Name must contain from 2 to 100 characters}
+2026-06-15T12:55:55.791+03:00  WARN 3952 --- [http-nio-8080-exec-7] o.e.d.exeption.GlobalExceptionHandler    : Validation failed: {fullName=Full name is required, email=Email is required}
+2026-06-15T13:06:14.474+03:00 ERROR 3952 --- [http-nio-8080-exec-9] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api for request '/api'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T13:06:59.073+03:00 ERROR 3952 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : Unexpected error occurred
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource ap for request '/ap'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-06-15T13:10:17.432+03:00  INFO 3952 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-15T13:10:17.437+03:00  INFO 3952 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-15T13:10:17.440+03:00  INFO 3952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T13:10:17.442+03:00  INFO 3952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-15T13:10:17.443+03:00  INFO 3952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-15T13:13:29.071+03:00  INFO 4292 --- [main] o.e.diiaclone.DiiaCloneApplication       : Starting DiiaCloneApplication using Java 24.0.1 with PID 4292 (/Users/egor/IdeaProjects/DiiaClone/target/classes started by egor in /Users/egor/IdeaProjects/DiiaClone)
+2026-06-15T13:13:29.072+03:00 DEBUG 4292 --- [main] o.e.diiaclone.DiiaCloneApplication       : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-06-15T13:13:29.073+03:00  INFO 4292 --- [main] o.e.diiaclone.DiiaCloneApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-06-15T13:13:29.331+03:00  INFO 4292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15T13:13:29.346+03:00  INFO 4292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-15T13:13:29.543+03:00  INFO 4292 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-15T13:13:29.549+03:00  INFO 4292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-15T13:13:29.549+03:00  INFO 4292 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-15T13:13:29.563+03:00  INFO 4292 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 476 ms
+2026-06-15T13:13:29.638+03:00  INFO 4292 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-15T13:13:29.660+03:00  INFO 4292 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-15T13:13:29.820+03:00  INFO 4292 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15T13:13:29.833+03:00  INFO 4292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-15T13:13:29.887+03:00  INFO 4292 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@653e7b
+2026-06-15T13:13:29.888+03:00  INFO 4292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-15T13:13:29.901+03:00  WARN 4292 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15T13:13:29.909+03:00  INFO 4292 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/diiaDB]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.0
+	Default catalog/schema: diiaDB/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-15T13:13:30.250+03:00  INFO 4292 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15T13:13:30.298+03:00  INFO 4292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T13:13:30.364+03:00  INFO 4292 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-15T13:13:30.527+03:00  WARN 4292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15T13:13:30.538+03:00  INFO 4292 --- [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-06-15T13:13:30.833+03:00  INFO 4292 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-15T13:13:30.836+03:00  INFO 4292 --- [main] o.e.diiaclone.DiiaCloneApplication       : Started DiiaCloneApplication in 1.918 seconds (process running for 2.178)
+2026-06-15T13:13:38.509+03:00  INFO 4292 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15T13:13:38.509+03:00  INFO 4292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-15T13:13:38.510+03:00  INFO 4292 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-15T13:13:38.522+03:00  WARN 4292 --- [http-nio-8080-exec-1] o.e.d.exeption.GlobalExceptionHandler    : Route not found: No static resource ap for request '/ap'.
+2026-06-15T13:13:47.010+03:00  INFO 4292 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-15T13:13:47.017+03:00  INFO 4292 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-15T13:13:47.020+03:00  INFO 4292 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15T13:13:47.022+03:00  INFO 4292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-15T13:13:47.023+03:00  INFO 4292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

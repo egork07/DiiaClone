@@ -39,6 +39,10 @@ public class UserService {
     }
 
     public UserResponseDto createUser(UserCreateDto dto) {
+        if (userRepository.existsByEmail(dto.getEmail())) {
+            log.warn("Email already exists: {}", dto.getEmail());
+            throw new EmailAlreadyExistsException(dto.getEmail());
+        }
         User user = UserMapper.toEntity(dto);
         return UserMapper.toDto(userRepository.save(user));
     }
@@ -50,11 +54,16 @@ public class UserService {
                     return new UserNotFoundException(id);
                 });
 
+        // Проверяем email только если он изменился
+        if (!user.getEmail().equals(dto.getEmail())
+                && userRepository.existsByEmail(dto.getEmail())) {
+            log.warn("Email already exists: {}", dto.getEmail());
+            throw new EmailAlreadyExistsException(dto.getEmail());
+        }
+
         user.setFullName(dto.getFullName());
         user.setEmail(dto.getEmail());
-
-        return UserMapper.toDto(userRepository.save(user));
-    }
+        return UserMapper.toDto(userRepository.save(user));}
 
     public void deleteUser(Long id) {
         if (!userRepository.existsById(id)) {

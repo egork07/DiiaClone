@@ -8,6 +8,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -40,6 +41,17 @@ public class GlobalExceptionHandler {
                 .body(new ErrorResponse(404, ex.getMessage()));
     }
 
+    @ExceptionHandler(EmailAlreadyExistsException.class)
+    public ResponseEntity<ErrorResponse> handleEmailAlreadyExists(
+            EmailAlreadyExistsException ex) {
+
+        log.warn("Email conflict: {}", ex.getMessage());
+
+        return ResponseEntity
+                .status(HttpStatus.CONFLICT)
+                .body(new ErrorResponse(409, ex.getMessage()));
+    }
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErrorResponse> handleValidation(
             MethodArgumentNotValidException ex) {
@@ -57,7 +69,17 @@ public class GlobalExceptionHandler {
                 .body(new ErrorResponse(400, "Validation failed", fieldErrors));
     }
 
-    // 500 — всё остальное (непредвиденные ошибки)
+    @ExceptionHandler(NoResourceFoundException.class)
+    public ResponseEntity<ErrorResponse> handleNoResourceFound(
+            NoResourceFoundException ex) {
+
+        log.warn("Route not found: {}", ex.getMessage());
+
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body(new ErrorResponse(404, "Route not found: " + ex.getMessage()));
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleGeneral(Exception ex) {
 
