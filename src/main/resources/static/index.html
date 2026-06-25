@@ -14,12 +14,8 @@
 <div class="auth-screen" id="auth-screen">
   <div class="auth-box">
     <div class="auth-tabs">
-      <button class="auth-tab active" onclick="switchAuthTab('login')">
-        Login
-      </button>
-      <button class="auth-tab" onclick="switchAuthTab('register')">
-        Register
-      </button>
+      <button class="auth-tab active" onclick="switchAuthTab('login')">Login</button>
+      <button class="auth-tab" onclick="switchAuthTab('register')">Register</button>
     </div>
     <div class="auth-body">
       <div class="auth-error" id="auth-error"></div>
@@ -29,23 +25,15 @@
         <input id="login-username" type="text" placeholder="your_username" />
         <label>Password</label>
         <input id="login-password" type="password" placeholder="••••••" />
-        <button class="btn btn-primary" onclick="doLogin()">
-          → Login
-        </button>
+        <button class="btn btn-primary" onclick="doLogin()">→ Login</button>
       </div>
 
       <div id="tab-register" style="display: none">
         <label>Username</label>
         <input id="reg-username" type="text" placeholder="your_username" />
         <label>Password</label>
-        <input
-                id="reg-password"
-                type="password"
-                placeholder="min 6 characters"
-        />
-        <button class="btn btn-primary" onclick="doRegister()">
-          → Register
-        </button>
+        <input id="reg-password" type="password" placeholder="min 6 characters" />
+        <button class="btn btn-primary" onclick="doRegister()">→ Register</button>
       </div>
     </div>
   </div>
@@ -54,16 +42,10 @@
 <!-- ── MAIN APP ── -->
 <div id="app">
   <header>
-    <div class="logo">
-      Diia<span>Clone</span> <span style="color: #2a2a2a">|</span>
-    </div>
+    <div class="logo">Diia<span>Clone</span></div>
     <nav>
-      <button class="tab active" onclick="showPage('users', event)">
-        Users
-      </button>
-      <button class="tab" onclick="showPage('documents', event)">
-        Documents
-      </button>
+      <button class="tab active" onclick="showPage('users', event)">Users</button>
+      <button class="tab" onclick="showPage('documents', event)">Documents</button>
     </nav>
     <div class="user-badge">
       <span id="header-username"></span>
@@ -85,16 +67,10 @@
             <div class="err-msg" id="err-u-name"></div>
 
             <label>Email</label>
-            <input
-                    id="u-email"
-                    type="email"
-                    placeholder="yehor@example.com"
-            />
+            <input id="u-email" type="email" placeholder="yehor@example.com" />
             <div class="err-msg" id="err-u-email"></div>
 
-            <button class="btn btn-primary" onclick="createUser()">
-              → Register
-            </button>
+            <button class="btn btn-primary" onclick="createUser()">→ Register</button>
           </div>
         </div>
 
@@ -116,6 +92,20 @@
         <div class="panel">
           <div class="panel-header">Documents registration</div>
           <div class="panel-body">
+            <!-- Подсказка для USER -->
+            <div class="info-box" id="doc-user-hint" style="display: none">
+              Документ буде прив'язаний до вашого акаунту автоматично
+            </div>
+
+            <!-- Select видно тільки ADMIN -->
+            <div id="doc-user-select-wrap">
+              <label>User</label>
+              <select id="d-user">
+                <option value="">— select user —</option>
+              </select>
+              <div class="err-msg" id="err-d-user"></div>
+            </div>
+
             <label>Document type</label>
             <input id="d-type" type="text" placeholder="Passport" />
             <div class="err-msg" id="err-d-type"></div>
@@ -124,15 +114,7 @@
             <input id="d-number" type="text" placeholder="AA123456" />
             <div class="err-msg" id="err-d-number"></div>
 
-            <label>User ID</label>
-            <select id="d-user">
-              <option value="">— select user —</option>
-            </select>
-            <div class="err-msg" id="err-d-user"></div>
-
-            <button class="btn btn-primary" onclick="createDocument()">
-              → Register
-            </button>
+            <button class="btn btn-primary" onclick="createDocument()">→ Register</button>
           </div>
         </div>
 
@@ -141,22 +123,11 @@
             Your documents
             <span class="count-badge" id="docs-count">0</span>
           </div>
-          <div
-                  class="panel-body"
-                  style="padding-bottom: 0; padding-top: 12px"
-          >
+          <div class="panel-body" style="padding-bottom: 0; padding-top: 12px">
             <div class="search-row">
-              <input
-                      id="search-type"
-                      type="text"
-                      placeholder="Search by type..."
-              />
-              <button class="btn btn-ghost" onclick="searchDocuments()">
-                Search
-              </button>
-              <button class="btn btn-ghost" onclick="loadDocuments()">
-                All
-              </button>
+              <input id="search-type" type="text" placeholder="Search by type..." />
+              <button class="btn btn-ghost" onclick="searchDocuments()">Search</button>
+              <button class="btn btn-ghost" onclick="loadDocuments()">All</button>
             </div>
           </div>
           <div id="docs-table-wrap">
@@ -180,16 +151,8 @@
       <input id="edit-u-email" type="email" />
     </div>
     <div class="modal-foot">
-      <button class="btn btn-ghost" onclick="closeModal('modal-user')">
-        Cancel
-      </button>
-      <button
-              class="btn btn-primary"
-              style="width: auto"
-              onclick="updateUser()"
-      >
-        Save
-      </button>
+      <button class="btn btn-ghost" onclick="closeModal('modal-user')">Cancel</button>
+      <button class="btn btn-primary" style="width: auto" onclick="updateUser()">Save</button>
     </div>
   </div>
 </div>
@@ -208,16 +171,8 @@
       <select id="edit-d-user"></select>
     </div>
     <div class="modal-foot">
-      <button class="btn btn-ghost" onclick="closeModal('modal-doc')">
-        Cancel
-      </button>
-      <button
-              class="btn btn-primary"
-              style="width: auto"
-              onclick="updateDocument()"
-      >
-        Save
-      </button>
+      <button class="btn btn-ghost" onclick="closeModal('modal-doc')">Cancel</button>
+      <button class="btn btn-primary" style="width: auto" onclick="updateDocument()">Save</button>
     </div>
   </div>
 </div>

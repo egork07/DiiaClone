@@ -1,11 +1,14 @@
 package org.example.diiaclone.service;
 
+import jakarta.transaction.Transactional;
 import org.example.diiaclone.dto.auth.AuthResponse;
 import org.example.diiaclone.dto.auth.LoginRequest;
 import org.example.diiaclone.dto.auth.RegisterRequest;
 import org.example.diiaclone.entity.AppUser;
 import org.example.diiaclone.entity.Role;
+import org.example.diiaclone.entity.User;
 import org.example.diiaclone.repository.AppUserRepository;
+import org.example.diiaclone.repository.UserRepository;
 import org.example.diiaclone.security.JwtService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,50 +22,63 @@ public class AuthService {
 
     private static final Logger log = LoggerFactory.getLogger(AuthService.class);
 
-    private final AppUserRepository userRepository;
+    private final AppUserRepository appUserRepository;
+    private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
 
-    public AuthService(AppUserRepository userRepository, PasswordEncoder passwordEncoder, JwtService jwtService, AuthenticationManager authenticationManager) {
+    public AuthService(AppUserRepository appUserRepository,
+                       UserRepository userRepository,
+                       PasswordEncoder passwordEncoder,
+                       JwtService jwtService,
+                       AuthenticationManager authenticationManager) {
+        this.appUserRepository = appUserRepository;
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.jwtService = jwtService;
         this.authenticationManager = authenticationManager;
     }
 
+    @Transactional
     public AuthResponse register(RegisterRequest request) {
-        if (userRepository.existsByUsername(request.getUsername())) {
+        if (appUserRepository.existsByUsername(request.getUsername())) {
             throw new IllegalArgumentException(
                     "Username already taken: " + request.getUsername());
         }
 
-        Role role = userRepository.count() == 0 ? Role.ADMIN : Role.USER;
+        Role role = appUserRepository.count() == 0 ? Role.ADMIN : Role.USER;
 
-        AppUser user = new AppUser(
+        AppUser appUser = new AppUser(
                 request.getUsername(),
-                passwordEncoder.encode(request.getPassword()), // BCrypt
+                passwordEncoder.encode(request.getPassword()),
                 role);
+        appUserRepository.save(appUser);
 
-        userRepository.save(user);
-        log.info("Registered new user={} role={}", user.getUsername(), role);
+        User domainUser = new User();
+        domainUser.setUsername(request.getUsername());
+        domainUser.setFullName(request.getUsername());
+        domainUser.setEmail(request.getUsername() + "@diia.app");
+        userRepository.save(domainUser);
 
-        String token = jwtService.generateToken(user);
-        return new AuthResponse(token, user.getUsername(), role.name());
+        log.info("Registered user={} role={}", request.getUsername(), role);
+
+        String token = jwtService.generateToken(appUser);
+        return new AuthResponse(token, appUser.getUsername(), role.name());
     }
 
     public AuthResponse login(LoginRequest request) {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
-                        request.getUsername(),
-                        request.getPassword()));
+                        request.getUsername(), request.getPassword()));
 
-        AppUser user = userRepository.findByUsername(request.getUsername())
+        AppUser appUser = appUserRepository.findByUsername(request.getUsername())
                 .orElseThrow();
 
-        log.info("User logged in: username={}", user.getUsername());
+        log.info("User logged in: username={}", appUser.getUsername());
 
-        String token = jwtService.generateToken(user);
-        return new AuthResponse(token, user.getUsername(), user.getRole().name());
+        String token = jwtService.generateToken(appUser);
+        return new AuthResponse(token, appUser.getUsername(),
+                appUser.getRole().name());
     }
 }

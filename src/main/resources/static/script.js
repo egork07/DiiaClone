@@ -128,14 +128,17 @@ function enterApp(data) {
   roleEl.textContent = currentRole;
   roleEl.className = "role-tag " + (currentRole === "ADMIN" ? "role-admin" : "role-user");
 
-  // Показываем/скрываем элементы по роли
   const isAdmin = currentRole === "ADMIN";
-  document.querySelectorAll(".admin-only").forEach((el) => (el.style.display = isAdmin ? "" : "none"));
 
-  // Если не ADMIN — сетка без левой панели
-  if (!isAdmin) {
-    document.getElementById("users-list-panel").style.gridColumn = "1 / -1";
-  }
+  // Показываем/скрываем панель создания пользователя — только ADMIN
+  document.getElementById("create-user-panel").style.display = isAdmin ? "" : "none";
+
+  // Если не ADMIN — список пользователей на всю ширину
+  document.getElementById("users-list-panel").classList.toggle("full-width", !isAdmin);
+
+  // В форме документа: USER видит подсказку вместо select
+  document.getElementById("doc-user-hint").style.display = isAdmin ? "none" : "";
+  document.getElementById("doc-user-select-wrap").style.display = isAdmin ? "" : "none";
 
   document.getElementById("auth-screen").style.display = "none";
   document.getElementById("app").style.display = "block";
@@ -167,13 +170,13 @@ async function loadUsers() {
   allUsers = data || [];
   document.getElementById("users-count").textContent = allUsers.length;
 
+  const isAdmin = currentRole === "ADMIN";
   const wrap = document.getElementById("users-table-wrap");
+
   if (!allUsers.length) {
     wrap.innerHTML = '<div class="empty">No users found</div>';
     return;
   }
-
-  const isAdmin = currentRole === "ADMIN";
 
   wrap.innerHTML = `<table>
     <thead><tr>
@@ -184,7 +187,7 @@ async function loadUsers() {
       .map(
           (u) => `<tr>
       <td class="id-cell">#${u.id}</td>
-      <td>${u.fullName}</td>
+      <td>${u.fullName}${u.username === currentUsername ? ' <span style="color:var(--accent);font-size:10px">[you]</span>' : ""}</td>
       <td style="color:var(--muted)">${u.email}</td>
       ${
               isAdmin
@@ -198,6 +201,19 @@ async function loadUsers() {
       )
       .join("")}</tbody>
   </table>`;
+
+  // Заполняем select для документов (нужен только ADMIN)
+  if (isAdmin) fillUserSelect();
+}
+
+function fillUserSelect() {
+  ["d-user", "edit-d-user"].forEach((id) => {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    sel.innerHTML =
+        '<option value="">— select user —</option>' +
+        allUsers.map((u) => `<option value="${u.id}">${u.fullName}</option>`).join("");
+  });
 }
 
 async function createUser() {
@@ -271,17 +287,16 @@ async function searchDocuments() {
 function renderDocs(docs) {
   document.getElementById("docs-count").textContent = docs.length;
   const wrap = document.getElementById("docs-table-wrap");
-  const isAdmin = currentRole === "ADMIN";
 
   if (!docs.length) {
     wrap.innerHTML = '<div class="empty">No documents found</div>';
     return;
   }
 
+  // Каждый видит свои документы с кнопками edit/delete
   wrap.innerHTML = `<table>
     <thead><tr>
-      <th>ID</th><th>Type</th><th>Number</th><th>Owner</th>
-      ${isAdmin ? "<th>Actions</th>" : ""}
+      <th>ID</th><th>Type</th><th>Number</th><th>Owner</th><th>Actions</th>
     </tr></thead>
     <tbody>${docs
       .map(
@@ -290,14 +305,10 @@ function renderDocs(docs) {
       <td><span class="type-tag">${d.documentType}</span></td>
       <td>${d.documentNumber}</td>
       <td style="color:var(--muted)">${d.ownerName}</td>
-      ${
-              isAdmin
-                  ? `<td><div class="actions">
+      <td><div class="actions">
         <button class="btn btn-ghost" onclick="openEditDoc(${d.id},'${esc(d.documentType)}','${esc(d.documentNumber)}')">Edit</button>
         <button class="btn btn-danger" onclick="deleteDocument(${d.id})">Del</button>
-      </div></td>`
-                  : ""
-          }
+      </div></td>
     </tr>`,
       )
       .join("")}</tbody>
@@ -309,38 +320,35 @@ async function loadUsersForSelect() {
     const { data } = await api("GET", "/users");
     allUsers = data || [];
   }
-  ["d-user", "edit-d-user"].forEach((id) => {
-    const sel = document.getElementById(id);
-    if (!sel) return;
-    sel.innerHTML =
-        '<option value="">— select user —</option>' +
-        allUsers.map((u) => `<option value="${u.id}">${u.fullName}</option>`).join("");
-  });
+  fillUserSelect();
 }
 
 async function createDocument() {
   clearErrors();
   const documentType = document.getElementById("d-type").value.trim();
   const documentNumber = document.getElementById("d-number").value.trim();
-  const userId = document.getElementById("d-user").value;
 
-  const { ok, status, data } = await api("POST", "/documents", {
-    documentType,
-    documentNumber,
-    userId: userId ? Number(userId) : null,
-  });
+  // USER: userId не отправляем — сервер сам привяжет к текущему пользователю
+  // ADMIN: берём из select
+  const isAdmin = currentRole === "ADMIN";
+  const userId = isAdmin ? document.getElementById("d-user").value : null;
+
+  const body = { documentType, documentNumber };
+  if (isAdmin && userId) body.userId = Number(userId);
+
+  const { ok, status, data } = await api("POST", "/documents", body);
 
   if (ok) {
     document.getElementById("d-type").value = "";
     document.getElementById("d-number").value = "";
-    document.getElementById("d-user").value = "";
+    if (isAdmin) document.getElementById("d-user").value = "";
     flash("Document created → #" + data.id);
     loadDocuments();
   } else if (status === 400 && data?.fieldErrors) {
     showFieldErrors(data.fieldErrors);
     flash("Validation error", "error");
-  } else if (status === 403) {
-    flash("Access denied", "error");
+  } else {
+    flash("Error: " + (data?.message || "unknown"), "error");
   }
 }
 
@@ -356,19 +364,17 @@ async function updateDocument() {
   const id = document.getElementById("edit-d-id").value;
   const documentType = document.getElementById("edit-d-type").value.trim();
   const documentNumber = document.getElementById("edit-d-number").value.trim();
-  const userId = document.getElementById("edit-d-user").value;
 
   const { ok, status } = await api("PUT", "/documents/" + id, {
     documentType,
     documentNumber,
-    userId: userId ? Number(userId) : null,
   });
 
   if (ok) {
     closeModal("modal-doc");
     flash("Document updated");
     loadDocuments();
-  } else if (status === 403) flash("Access denied — admin only", "error");
+  } else if (status === 403) flash("Access denied — not your document", "error");
   else flash("Validation error", "error");
 }
 
@@ -377,11 +383,11 @@ async function deleteDocument(id) {
   if (ok) {
     flash("Document deleted");
     loadDocuments();
-  } else if (status === 403) flash("Access denied — admin only", "error");
+  } else if (status === 403) flash("Access denied — not your document", "error");
   else flash("Document not found", "error");
 }
 
-// ── Утилиты ────────────────────────────────────────────────────────────────
+// ── Навигация ─────────────────────────────────────────────────────────────
 
 function showPage(name, event) {
   document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
@@ -390,7 +396,7 @@ function showPage(name, event) {
   event.target.classList.add("active");
   if (name === "documents") {
     loadDocuments();
-    loadUsersForSelect();
+    if (currentRole === "ADMIN") loadUsersForSelect();
   }
 }
 

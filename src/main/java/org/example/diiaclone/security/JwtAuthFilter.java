@@ -40,7 +40,6 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
         String authHeader = request.getHeader("Authorization");
 
-        // Если заголовка нет или не Bearer — пропускаем без аутентификации
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             filterChain.doFilter(request, response);
             return;
@@ -51,7 +50,6 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         try {
             String username = jwtService.extractUsername(jwt);
 
-            // Аутентификация ещё не установлена в контексте
             if (username != null &&
                     SecurityContextHolder.getContext().getAuthentication() == null) {
 
@@ -70,7 +68,6 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                             new WebAuthenticationDetailsSource()
                                     .buildDetails(request));
 
-                    // Устанавливаем аутентификацию — запрос считается авторизованным
                     SecurityContextHolder.getContext()
                             .setAuthentication(authToken);
 
@@ -79,7 +76,6 @@ public class JwtAuthFilter extends OncePerRequestFilter {
             }
         } catch (Exception ex) {
             log.warn("JWT processing failed: {}", ex.getMessage());
-            // Не прерываем цепочку — Spring Security сам вернёт 401
         }
 
         filterChain.doFilter(request, response);

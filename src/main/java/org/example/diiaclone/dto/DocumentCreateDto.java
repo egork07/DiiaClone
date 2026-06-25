@@ -13,16 +13,15 @@ public class DocumentCreateDto {
     @Size(min = 5, max = 30,
             message = "Document number must be from 5 to 30 characters")
     private String documentNumber;
-
-    @NotNull(message = "User must be selected")
     private Long userId;
 
     public DocumentCreateDto() {}
 
-    public String getDocumentType() { return documentType; }
+    public String getDocumentType()   { return documentType; }
     public String getDocumentNumber() { return documentNumber; }
-    public Long getUserId() { return userId; }
-    public void setDocumentType(String documentType) { this.documentType = documentType; }
-    public void setDocumentNumber(String documentNumber) { this.documentNumber = documentNumber; }
-    public void setUserId(Long userId) { this.userId = userId; }
+    public Long getUserId()           { return userId; }
+
+    public void setDocumentType(String v)   { this.documentType = v; }
+    public void setDocumentNumber(String v) { this.documentNumber = v; }
+    public void setUserId(Long v)           { this.userId = v; }
 }

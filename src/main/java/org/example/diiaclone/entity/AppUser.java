@@ -20,7 +20,7 @@ public class AppUser implements UserDetails {
     private String username;
 
     @Column(nullable = false)
-    private String password; // BCrypt hash
+    private String password;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
@@ -33,8 +33,6 @@ public class AppUser implements UserDetails {
         this.password = password;
         this.role = role;
     }
-
-    // UserDetails — Spring Security читает эти методы
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

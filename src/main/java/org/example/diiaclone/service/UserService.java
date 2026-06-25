@@ -25,12 +25,9 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    // Доступно всем авторизованным
     public List<UserResponseDto> getAllUsers() {
         return userRepository.findAll()
-                .stream()
-                .map(UserMapper::toDto)
-                .toList();
+                .stream().map(UserMapper::toDto).toList();
     }
 
     public UserResponseDto getUserById(Long id) {
@@ -42,38 +39,29 @@ public class UserService {
                 });
     }
 
-    // Только ADMIN может создавать пользователей
-    // @HandleAuthorizationDenied — вместо 403 вернёт null,
-    // контроллер обработает это как 403 с понятным сообщением
     @PreAuthorize("hasRole('ADMIN')")
-    @HandleAuthorizationDenied(handlerClass = AuthorizationDeniedHandler.class)
     public UserResponseDto createUser(UserCreateDto dto) {
         User user = UserMapper.toEntity(dto);
         return UserMapper.toDto(userRepository.save(user));
     }
 
-    // Только ADMIN может обновлять
     @PreAuthorize("hasRole('ADMIN')")
-    @HandleAuthorizationDenied(handlerClass = AuthorizationDeniedHandler.class)
     public UserResponseDto updateUser(Long id, UserCreateDto dto) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> {
-                    log.warn("Update failed — user with id={} not found", id);
+                    log.warn("Update failed — user id={} not found", id);
                     return new UserNotFoundException(id);
                 });
 
         user.setFullName(dto.getFullName());
         user.setEmail(dto.getEmail());
-
         return UserMapper.toDto(userRepository.save(user));
     }
 
-    // Только ADMIN может удалять
     @PreAuthorize("hasRole('ADMIN')")
-    @HandleAuthorizationDenied(handlerClass = AuthorizationDeniedHandler.class)
     public void deleteUser(Long id) {
         if (!userRepository.existsById(id)) {
-            log.warn("Delete failed — user with id={} not found", id);
+            log.warn("Delete failed — user id={} not found", id);
             throw new UserNotFoundException(id);
         }
         userRepository.deleteById(id);
@@ -81,9 +69,11 @@ public class UserService {
 
     public User getUserEntityById(Long id) {
         return userRepository.findById(id)
-                .orElseThrow(() -> {
-                    log.warn("getUserEntityById — user with id={} not found", id);
-                    return new UserNotFoundException(id);
-                });
+                .orElseThrow(() -> new UserNotFoundException(id));
+    }
+
+    public User getUserEntityByUsername(String username) {
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> new UserNotFoundException(username));
     }
 }

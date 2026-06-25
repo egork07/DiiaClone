@@ -225,6 +225,10 @@ main {
   align-items: start;
 }
 
+.full-width {
+  grid-column: 1 / -1;
+}
+
 .panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -519,4 +523,15 @@ tr:hover td {
   border: none;
   border-top: 1px solid var(--border);
   margin: 14px 0;
+}
+
+.info-box {
+  background: var(--accent-dim);
+  border: 1px solid #4a9eff44;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--accent);
+  margin-bottom: 12px;
 }

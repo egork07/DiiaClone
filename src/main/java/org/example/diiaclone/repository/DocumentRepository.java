@@ -8,4 +8,9 @@ import java.util.List;
 public interface DocumentRepository extends JpaRepository<Document, Long> {
 
     List<Document> findByDocumentTypeContainingIgnoreCase(String documentType);
+
+    List<Document> findByUserId(Long userId);
+
+    List<Document> findByUserIdAndDocumentTypeContainingIgnoreCase(
+            Long userId, String documentType);
 }
