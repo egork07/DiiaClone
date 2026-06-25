@@ -31,6 +31,71 @@ body {
   min-height: 100vh;
 }
 
+/* ── AUTH SCREEN ── */
+.auth-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 360px;
+  overflow: hidden;
+}
+
+.auth-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.auth-tab {
+  flex: 1;
+  padding: 12px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.auth-tab.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.auth-body {
+  padding: 24px;
+}
+
+.auth-error {
+  background: var(--danger-dim);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  font-family: var(--sans);
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  display: none;
+}
+
+.auth-error.show {
+  display: block;
+}
+
+/* ── MAIN APP ── */
+#app {
+  display: none;
+}
+
 header {
   border-bottom: 1px solid var(--border);
   padding: 1.25rem 2rem;
@@ -56,10 +121,56 @@ header {
   font-weight: 400;
 }
 
+.user-badge {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.role-tag {
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.role-admin {
+  background: #ffd70022;
+  color: #ffd700;
+  border: 1px solid #ffd70044;
+}
+
+.role-user {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid #4a9eff44;
+}
+
+.btn-logout {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-logout:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
 nav {
   display: flex;
   gap: 0;
-  margin-left: auto;
 }
 
 .tab {
@@ -245,6 +356,11 @@ select option {
 .btn-ghost:hover {
   border-color: var(--border-active);
   color: var(--text);
+}
+
+/* Скрываем элементы, доступные только ADMIN */
+.admin-only {
+  display: none;
 }
 
 .search-row {

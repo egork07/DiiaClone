@@ -9,11 +9,14 @@ import org.example.diiaclone.mapper.UserMapper;
 import org.example.diiaclone.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.authorization.method.HandleAuthorizationDenied;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
 public class UserService {
+
     private static final Logger log = LoggerFactory.getLogger(UserService.class);
 
     private final UserRepository userRepository;
@@ -22,6 +25,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
+    // Доступно всем авторизованным
     public List<UserResponseDto> getAllUsers() {
         return userRepository.findAll()
                 .stream()
@@ -38,15 +42,19 @@ public class UserService {
                 });
     }
 
+    // Только ADMIN может создавать пользователей
+    // @HandleAuthorizationDenied — вместо 403 вернёт null,
+    // контроллер обработает это как 403 с понятным сообщением
+    @PreAuthorize("hasRole('ADMIN')")
+    @HandleAuthorizationDenied(handlerClass = AuthorizationDeniedHandler.class)
     public UserResponseDto createUser(UserCreateDto dto) {
-        if (userRepository.existsByEmail(dto.getEmail())) {
-            log.warn("Email already exists: {}", dto.getEmail());
-            throw new EmailAlreadyExistsException(dto.getEmail());
-        }
         User user = UserMapper.toEntity(dto);
         return UserMapper.toDto(userRepository.save(user));
     }
 
+    // Только ADMIN может обновлять
+    @PreAuthorize("hasRole('ADMIN')")
+    @HandleAuthorizationDenied(handlerClass = AuthorizationDeniedHandler.class)
     public UserResponseDto updateUser(Long id, UserCreateDto dto) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> {
@@ -54,17 +62,15 @@ public class UserService {
                     return new UserNotFoundException(id);
                 });
 
-        // Проверяем email только если он изменился
-        if (!user.getEmail().equals(dto.getEmail())
-                && userRepository.existsByEmail(dto.getEmail())) {
-            log.warn("Email already exists: {}", dto.getEmail());
-            throw new EmailAlreadyExistsException(dto.getEmail());
-        }
-
         user.setFullName(dto.getFullName());
         user.setEmail(dto.getEmail());
-        return UserMapper.toDto(userRepository.save(user));}
 
+        return UserMapper.toDto(userRepository.save(user));
+    }
+
+    // Только ADMIN может удалять
+    @PreAuthorize("hasRole('ADMIN')")
+    @HandleAuthorizationDenied(handlerClass = AuthorizationDeniedHandler.class)
     public void deleteUser(Long id) {
         if (!userRepository.existsById(id)) {
             log.warn("Delete failed — user with id={} not found", id);

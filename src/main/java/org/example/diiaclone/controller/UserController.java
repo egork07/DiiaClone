@@ -33,7 +33,6 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<UserResponseDto> getUserById(@PathVariable Long id) {
-
         return ResponseEntity.ok(userService.getUserById(id));
     }
 
@@ -41,9 +40,14 @@ public class UserController {
     public ResponseEntity<UserResponseDto> createUser(
             @Valid @RequestBody UserCreateDto dto) {
 
-        return ResponseEntity
-                .status(HttpStatus.CREATED)
-                .body(userService.createUser(dto));
+        UserResponseDto result = userService.createUser(dto);
+
+        // null означает что @HandleAuthorizationDenied сработал — нет прав
+        if (result == null) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+        }
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(result);
     }
 
     @PutMapping("/{id}")
@@ -51,7 +55,13 @@ public class UserController {
             @PathVariable Long id,
             @Valid @RequestBody UserCreateDto dto) {
 
-        return ResponseEntity.ok(userService.updateUser(id, dto));
+        UserResponseDto result = userService.updateUser(id, dto);
+
+        if (result == null) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+        }
+
+        return ResponseEntity.ok(result);
     }
 
     @DeleteMapping("/{id}")

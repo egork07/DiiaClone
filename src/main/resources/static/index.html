@@ -1,144 +1,229 @@
 <!doctype html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Diia Clone</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        Diia<span>Clone</span> <span style="color: #2a2a2a">|</span>
-      </div>
-      <nav>
-        <button class="tab active" onclick="showPage('users')">Users</button>
-        <button class="tab" onclick="showPage('documents')">Documents</button>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Diia Clone</title>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<!-- ── AUTH SCREEN ── -->
+<div class="auth-screen" id="auth-screen">
+  <div class="auth-box">
+    <div class="auth-tabs">
+      <button class="auth-tab active" onclick="switchAuthTab('login')">
+        Login
+      </button>
+      <button class="auth-tab" onclick="switchAuthTab('register')">
+        Register
+      </button>
+    </div>
+    <div class="auth-body">
+      <div class="auth-error" id="auth-error"></div>
 
-    <main>
-      <!-- USERS PAGE -->
-      <div id="page-users" class="page active">
-        <div class="grid">
-          <div class="panel">
-            <div class="panel-header">User Registration</div>
-            <div class="panel-body">
-              <label>Full name</label>
-              <input id="u-name" type="text" placeholder="Yehor Kyrylin" />
-              <div class="err-msg" id="err-u-name"></div>
-
-              <label>Email</label>
-              <input id="u-email" type="email" placeholder="yehor@example.com" />
-              <div class="err-msg" id="err-u-email"></div>
-
-              <button class="btn btn-primary" onclick="createUser()">
-                → Register
-              </button>
-            </div>
-          </div>
-
-          <div class="panel">
-            <div class="panel-header">
-              Users
-              <span class="count-badge" id="users-count">0</span>
-            </div>
-            <div id="users-table-wrap">
-              <div class="empty">Loading...</div>
-            </div>
-          </div>
-        </div>
+      <div id="tab-login">
+        <label>Username</label>
+        <input id="login-username" type="text" placeholder="your_username" />
+        <label>Password</label>
+        <input id="login-password" type="password" placeholder="••••••" />
+        <button class="btn btn-primary" onclick="doLogin()">
+          → Login
+        </button>
       </div>
 
-      <!-- DOCUMENTS PAGE -->
-      <div id="page-documents" class="page">
-        <div class="grid">
-          <div class="panel">
-            <div class="panel-header">Documents registration</div>
-            <div class="panel-body">
-              <label>Document type</label>
-              <input id="d-type" type="text" placeholder="Passport" />
-              <div class="err-msg" id="err-d-type"></div>
-
-              <label>Document number</label>
-              <input id="d-number" type="text" placeholder="AA123456" />
-              <div class="err-msg" id="err-d-number"></div>
-
-              <label>User ID</label>
-              <select id="d-user">
-                <option value="">— select user —</option>
-              </select>
-              <div class="err-msg" id="err-d-user"></div>
-
-              <button class="btn btn-primary" onclick="createDocument()">
-                → Register
-              </button>
-            </div>
-          </div>
-
-          <div class="panel">
-            <div class="panel-header">
-              Your documents
-              <span class="count-badge" id="docs-count">0</span>
-            </div>
-            <div class="panel-body" style="padding-bottom: 0; padding-top: 12px">
-              <div class="search-row">
-                <input id="search-type" type="text" placeholder="Search by type..." />
-                <button class="btn btn-ghost" onclick="searchDocuments()">Search</button>
-                <button class="btn btn-ghost" onclick="loadDocuments()">All</button>
-              </div>
-            </div>
-            <div id="docs-table-wrap">
-              <div class="empty">Loading...</div>
-            </div>
-          </div>
-        </div>
+      <div id="tab-register" style="display: none">
+        <label>Username</label>
+        <input id="reg-username" type="text" placeholder="your_username" />
+        <label>Password</label>
+        <input
+                id="reg-password"
+                type="password"
+                placeholder="min 6 characters"
+        />
+        <button class="btn btn-primary" onclick="doRegister()">
+          → Register
+        </button>
       </div>
-    </main>
+    </div>
+  </div>
+</div>
 
-    <!-- Edit User Modal -->
-    <div class="modal-overlay" id="modal-user">
-      <div class="modal">
-        <div class="modal-header">PUT /api/users/{id}</div>
-        <div class="modal-body">
-          <input type="hidden" id="edit-u-id" />
-          <label>Full name</label>
-          <input id="edit-u-name" type="text" />
-          <label>Email</label>
-          <input id="edit-u-email" type="email" />
+<!-- ── MAIN APP ── -->
+<div id="app">
+  <header>
+    <div class="logo">
+      Diia<span>Clone</span> <span style="color: #2a2a2a">|</span>
+    </div>
+    <nav>
+      <button class="tab active" onclick="showPage('users', event)">
+        Users
+      </button>
+      <button class="tab" onclick="showPage('documents', event)">
+        Documents
+      </button>
+    </nav>
+    <div class="user-badge">
+      <span id="header-username"></span>
+      <span class="role-tag" id="header-role"></span>
+      <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- USERS PAGE -->
+    <div id="page-users" class="page active">
+      <div class="grid">
+        <!-- Форма создания — только ADMIN видит -->
+        <div class="panel admin-only" id="create-user-panel">
+          <div class="panel-header">User Registration</div>
+          <div class="panel-body">
+            <label>Full name</label>
+            <input id="u-name" type="text" placeholder="Yehor Kyrylin" />
+            <div class="err-msg" id="err-u-name"></div>
+
+            <label>Email</label>
+            <input
+                    id="u-email"
+                    type="email"
+                    placeholder="yehor@example.com"
+            />
+            <div class="err-msg" id="err-u-email"></div>
+
+            <button class="btn btn-primary" onclick="createUser()">
+              → Register
+            </button>
+          </div>
         </div>
-        <div class="modal-foot">
-          <button class="btn btn-ghost" onclick="closeModal('modal-user')">Cancel</button>
-          <button class="btn btn-primary" style="width: auto" onclick="updateUser()">Save</button>
+
+        <div class="panel" id="users-list-panel">
+          <div class="panel-header">
+            Users
+            <span class="count-badge" id="users-count">0</span>
+          </div>
+          <div id="users-table-wrap">
+            <div class="empty">Loading...</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Edit Document Modal -->
-    <div class="modal-overlay" id="modal-doc">
-      <div class="modal">
-        <div class="modal-header">PUT /api/documents/{id}</div>
-        <div class="modal-body">
-          <input type="hidden" id="edit-d-id" />
-          <label>Document type</label>
-          <input id="edit-d-type" type="text" />
-          <label>Document number</label>
-          <input id="edit-d-number" type="text" />
-          <label>User</label>
-          <select id="edit-d-user"></select>
+    <!-- DOCUMENTS PAGE -->
+    <div id="page-documents" class="page">
+      <div class="grid">
+        <div class="panel">
+          <div class="panel-header">Documents registration</div>
+          <div class="panel-body">
+            <label>Document type</label>
+            <input id="d-type" type="text" placeholder="Passport" />
+            <div class="err-msg" id="err-d-type"></div>
+
+            <label>Document number</label>
+            <input id="d-number" type="text" placeholder="AA123456" />
+            <div class="err-msg" id="err-d-number"></div>
+
+            <label>User ID</label>
+            <select id="d-user">
+              <option value="">— select user —</option>
+            </select>
+            <div class="err-msg" id="err-d-user"></div>
+
+            <button class="btn btn-primary" onclick="createDocument()">
+              → Register
+            </button>
+          </div>
         </div>
-        <div class="modal-foot">
-          <button class="btn btn-ghost" onclick="closeModal('modal-doc')">Cancel</button>
-          <button class="btn btn-primary" style="width: auto" onclick="updateDocument()">Save</button>
+
+        <div class="panel">
+          <div class="panel-header">
+            Your documents
+            <span class="count-badge" id="docs-count">0</span>
+          </div>
+          <div
+                  class="panel-body"
+                  style="padding-bottom: 0; padding-top: 12px"
+          >
+            <div class="search-row">
+              <input
+                      id="search-type"
+                      type="text"
+                      placeholder="Search by type..."
+              />
+              <button class="btn btn-ghost" onclick="searchDocuments()">
+                Search
+              </button>
+              <button class="btn btn-ghost" onclick="loadDocuments()">
+                All
+              </button>
+            </div>
+          </div>
+          <div id="docs-table-wrap">
+            <div class="empty">Loading...</div>
+          </div>
         </div>
       </div>
     </div>
+  </main>
+</div>
 
-    <div class="flash" id="flash"></div>
+<!-- Edit User Modal -->
+<div class="modal-overlay" id="modal-user">
+  <div class="modal">
+    <div class="modal-header">PUT /api/users/{id}</div>
+    <div class="modal-body">
+      <input type="hidden" id="edit-u-id" />
+      <label>Full name</label>
+      <input id="edit-u-name" type="text" />
+      <label>Email</label>
+      <input id="edit-u-email" type="email" />
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" onclick="closeModal('modal-user')">
+        Cancel
+      </button>
+      <button
+              class="btn btn-primary"
+              style="width: auto"
+              onclick="updateUser()"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+</div>
 
-    <script src="script.js"></script>
-  </body>
+<!-- Edit Document Modal -->
+<div class="modal-overlay" id="modal-doc">
+  <div class="modal">
+    <div class="modal-header">PUT /api/documents/{id}</div>
+    <div class="modal-body">
+      <input type="hidden" id="edit-d-id" />
+      <label>Document type</label>
+      <input id="edit-d-type" type="text" />
+      <label>Document number</label>
+      <input id="edit-d-number" type="text" />
+      <label>User</label>
+      <select id="edit-d-user"></select>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" onclick="closeModal('modal-doc')">
+        Cancel
+      </button>
+      <button
+              class="btn btn-primary"
+              style="width: auto"
+              onclick="updateDocument()"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="flash" id="flash"></div>
+
+<script src="script.js"></script>
+</body>
 </html>
